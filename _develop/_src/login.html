@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+		<meta name="description" content="">
+		<meta name="keywords" content="Keywords">
+		<title>LOGIN | ログイン</title>
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="">
+		<meta property="og:description" content="">
+		<meta property="og:url" content="https://">
+		<meta property="og:site_name" content="">
+		<meta property="og:image" content="" />
+
+		<link rel="icon" href="./favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700;900&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap">
+		<link rel="stylesheet" href="./css/normalize.css">
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="./css/login.css">
+	</head>
+
+	<body class="container">
+		<main>
+			<section class="sec__login">
+				<div class="row">
+					<div class="login__wrapper">
+						<h1 class="login__logo"><img src="./images/common/header_logo.png" alt="agent CLUB"></h1>
+						<div class="login__blog">
+							<form action="#">
+								<div class="form__control">
+									<div class="form__control__label">
+										<label for="#">メールアドレス</label>
+									</div>
+									<div class="form__control__input">
+										<input type="text" placeholder="sample@">
+									</div>
+								</div>
+								<div class="form__control">
+									<div class="form__control__label">
+										<label for="#">パスワード</label>
+									</div>
+									<div class="form__control__input">
+										<input type="password" placeholder="・・・・・・・">
+									</div>
+									<div class="form__control__checkbox">
+										<label class="control__label control__label--checkbox">
+											<input type="checkbox" name="password-validate" id="show-password"/>
+											<span class="check"></span>
+											パスワードを表示する
+										</label>
+										<label class="control__label control__label--checkbox">
+											<input type="checkbox" name="password-validate" id="remember-password"/>
+											<span class="check"></span>
+											次回以降の入力を省略する
+										</label>
+									</div>
+								</div>
+								<div class="form__btns">
+									<button type="submit" class="btn btn--login">ログイン</button>
+									<a href="#" class="link__simple">パスワードをお忘れの方はこちら</a>
+								</div>
+							</form>
+						</div>
+						<div class="login__blog">
+							<h2 class="register__title">会員登録がまだの方</h2>
+							<div class="register__btns">
+								<a href="#" class="btn btn--register">新規登録はこちら</a>
+								<a href="#" class="link__simple">agent CLUBとは</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="./js/libs.js"></script>
+		<script src="./js/base.js"></script>
+		<script src="./js/script.js"></script>
+	</body>
+</html>

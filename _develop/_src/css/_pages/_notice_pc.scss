@@ -1,0 +1,164 @@
+main{
+    .inner{
+        max-width: 798px;
+    }
+}
+.sec__coin{
+    .coin{
+        &__banner{
+            position: relative;
+            margin-bottom: 40px;
+            padding: 22px 18px 22px 80px;
+            background-color: #028552;
+            border-radius: 15px;
+            color: $col-white;
+            z-index: 1;
+            &:after{
+                content: '';
+                position: absolute;
+                left: 18px;
+                bottom: 18px;
+                background: transparent url(../../images/common/icon_coin_gr.png) no-repeat;
+                background-size: 100% auto;
+                width: 89px;
+                height: 89px;
+                z-index: -1;
+            }
+            &__lbl{
+                margin-bottom: 16px;
+                padding: 10px 0 10px 65px;
+                background: transparent url(../../images/common/icon_coin_sm.png) no-repeat;
+                background-size: 52px auto;
+                font-size: rem(26);
+                font-weight: bold;
+            }
+            &__detail{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+            &__price{
+                font-size: rem(30);
+                font-weight: bold;
+                span{
+                    display: inline-block;
+                    margin-right: 16px;
+                    font-family: $font-m1;
+                    font-size: rem(60);
+                }
+            }
+        }
+        &__warning{
+            margin-bottom: 28px;
+            font-family: $font-source;
+            font-size: rem(14);
+            font-weight: bold;
+            color: $col-pink;
+            text-align: center;
+            span{
+                display: inline-block;
+                padding: 5px 0 5px 28px;
+                background: transparent url(../../images/common/notice_icon_warning.png) no-repeat left center;
+                background-size: 20px auto;
+            }
+        }
+        &__subttl{
+            position: relative;
+            margin-bottom: 40px;
+            padding: 10px 0;
+            font-family: $font-source;
+            font-size: rem(18);
+            font-weight: bold;
+            color: #036442;
+            text-align: center;
+            z-index: 1;
+            &:after{
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                top: 0;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 45px 120.5px 0;
+                border-color: rgba($color: #036442, $alpha: 0.17) transparent transparent;
+                z-index: -1;
+            }
+        }
+        &__img{
+            margin-bottom: 40px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        &__controls{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            &__lbl{
+                padding: 0 30px 0 26px;
+                font-family: $font-source;
+                font-size: rem(14);
+                color: $col-gray;
+            }
+        }
+    }
+    .step{
+        &__list{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 28px;
+            padding: 0 31px;
+        }
+        &__item{
+            position: relative;
+            flex: 1;
+            font-family: $font-source;
+            font-size: rem(14);
+            color: $col-green2;
+            text-align: center;
+            z-index: 1;
+            &:before{
+                content: '';
+                position: absolute;
+                top: 42px;
+                left: 50%;
+                background-color: #D8D8D8;
+                border-radius: 50%;
+                width: 15px;
+                height: 15px;
+                transform: translateY(-50%);
+                pointer-events: none;
+                z-index: 1;
+            }
+            &__lbl{
+                display: inline-block;
+                margin-bottom: 25px;
+                padding: 5px 10px;
+                min-width: 94px;
+                border: 1px solid #707070;
+                border-radius: 10px;
+                text-align: center;
+            }
+            &--active{
+                &:before{
+                    background-color: $col-green2;
+                }
+            }
+            &:not(:last-child){
+                margin-right: 88px;
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top: 42px;
+                    right: -100%;
+                    background-color: #D8D8D8;
+                    width: 280px;
+                    height: 1px;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}

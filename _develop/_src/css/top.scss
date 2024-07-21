@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+@import "./_mixin/_mixin";
+@include min-screen() {
+  @import "./_pages/_top_pc";
+}
+@include max-screen() {
+  @import "./_pages/_top_sp";
+}

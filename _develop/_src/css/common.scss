@@ -1,0 +1,124 @@
+@charset "utf-8";
+// ===================================================================
+//  common.css
+// ===================================================================
+@import "./_mixin/_mixin";
+//----------------------------------------------------
+//  共通
+//----------------------------------------------------
+html {
+  font-size: 10px;
+}
+body {
+  overflow-wrap: break-word;
+}
+a,
+a:link,
+a:visited,
+a:active,
+a:hover,
+a:hover img {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:hover,
+a:hover img,
+.img_hover:hover {
+  filter: alpha(opacity=80);
+  -ms-filter: "alpha(opacity=80)";
+  opacity: .80;
+}
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, nav, picture {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+body,
+td,
+th,
+input,
+textarea {
+  font-family: 'Noto Sans JP', "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $col-dfault;
+  line-height: 1.3;
+}
+//---------------------------------------------------------------------------
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+figure, picture {
+  line-height: 0;
+}
+picture {
+  display: block;
+}
+html, body {
+  height: 100%;
+}
+
+@font-face {
+  font-family: "SourceHanSansJP";
+  src: url("../fonts/SourceHanSansJP-Regular.otf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SourceHanSansJP";
+  src: url("../fonts/SourceHanSansJP-Medium.otf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "SourceHanSansJP";
+  src: url("../fonts/SourceHanSansJP-Bold.otf");
+  font-weight: bold;
+}
+
+@include min-screen() {
+  @import "./_common/_common_pc";
+}
+@include max-screen() {
+  @import "./_common/_common_sp";
+}

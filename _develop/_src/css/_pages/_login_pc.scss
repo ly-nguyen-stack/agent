@@ -1,0 +1,80 @@
+body{
+    padding-top: 0;
+}
+.sec__login{
+    padding: 10px 0;
+    height: 100vh;
+    background-color: $col-white;
+    .row{
+        height: 100%;
+    }
+    .login{
+        &__wrapper{
+            position: relative;
+            padding: 60px 0;
+            height: 100%;
+            z-index: 1;
+            &:after{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background: transparent url(../../images/login/login_bgr.jpg) no-repeat;
+                background-size: cover;
+                border-radius: 70px;
+                z-index: -1;
+            }
+        }
+        &__logo{
+            margin-bottom: 30px;
+            text-align: center;
+            img{
+                max-width: 246px;
+            }
+        }
+        &__blog{
+            margin: 0 auto;
+            padding: 24px 15px;
+            background-color: rgba($color: $col-white, $alpha: 0.89);
+            max-width: 534px;
+            box-shadow: 0 3px 6px rgba($color: $col-black, $alpha: 0.15);
+            border-radius: 15px;
+            .register{
+                &__title{
+                    margin-bottom: 26px;
+                    font-family: $font-source;
+                    font-size: rem(12);
+                    font-weight: 400;
+                    color: $col-green2;
+                    text-align: center;
+                }
+                &__btns{
+                    text-align: center;
+                }
+            }
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .form{
+        &__control{
+            &__label{
+                font-size: rem(12);
+                color: $col-gray;
+            }
+            &__input{
+                input{
+                    background-color: transparent;
+                    border-color: $col-green1;
+                    font-size: rem(14);
+                }
+            }
+        }
+        &__btns{
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.sec__login{
+    padding: 10px 10px;
+    min-height: 100vh;
+    background-color: $col-white;
+    .row{
+        height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .login{
+        &__wrapper{
+            position: relative;
+            padding: 120px 28px;
+            height: 100%;
+            z-index: 1;
+            &:after{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                background: transparent url(../../images/login/login_bgr.jpg) no-repeat;
+                background-size: cover;
+                border-radius: 140px;
+                z-index: -1;
+            }
+        }
+        &__logo{
+            margin-bottom: 30px;
+            text-align: center;
+            img{
+                max-width: 436px;
+            }
+        }
+        &__blog{
+            padding: 48px 30px;
+            background-color: rgba($color: $col-white, $alpha: 0.89);
+            box-shadow: 0 6px 12px rgba($color: $col-black, $alpha: 0.15);
+            border-radius: 30px;
+            .register{
+                &__title{
+                    margin-bottom: 26px;
+                    font-family: $font-source;
+                    font-size: vw(24);
+                    font-weight: 400;
+                    color: $col-green2;
+                    text-align: center;
+                }
+                &__btns{
+                    text-align: center;
+                }
+            }
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .form{
+        &__control{
+            &__label{
+                font-size: vw(24);
+                color: $col-gray;
+            }
+            &__input{
+                input{
+                    background-color: transparent;
+                    border-color: $col-green1;
+                    font-size: vw(28);
+                }
+            }
+        }
+        &__btns{
+            text-align: center;
+        }
+    }
+}
