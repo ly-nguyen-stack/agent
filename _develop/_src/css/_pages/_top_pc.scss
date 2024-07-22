@@ -38,7 +38,7 @@
     }
 }
 .sec__news{
-    margin-bottom: 40px;
+    padding-bottom: 42px;
     .news{
         &__wrapper{
             display: flex;
@@ -50,22 +50,23 @@
         }
         &__head{
             flex-shrink: 0;
-            padding: 30px 24px;
+            padding: 31px 25px 24px;
             background-color: rgba($color: $col-green1, $alpha: 0.06);
             width: 250px;
         }
         &__title{
-            margin-bottom: 18px;
+            margin-bottom: 19px;
             padding-left: 26px;
             background: transparent url(../../images/top/icon_info.png) no-repeat left center;
             background-size: 20px auto;
             font-size: rem(18);
             color: $col-green1;
             font-weight: bold;
+            letter-spacing: -2px;
         }
         &__cnt{
             flex: 1 auto;
-            padding: 30px 34px 30px 90px;
+            padding: 33px 32px 29px 92px;
             width: 100%;
         }
         &__item{
@@ -73,8 +74,8 @@
             font-weight: 500;
             &__date{
                 flex-shrink: 0;
-                padding-right: 5px;
-                width: 120px;
+                padding: 2px 5px 0 0;
+                width: 85px;
                 font-size: rem(12);
                 color: $col-gray;
             }
@@ -84,33 +85,34 @@
                 padding-right: 30px;
                 background: transparent url(../../images/common/arrow_circle_rgt_or.png) no-repeat right center;
                 background-size: 18px auto;
-                font-size: rem(16);
                 color: $col-dfault;
+                letter-spacing: -1px;
                 &:link{
                     color: $col-dfault;
                 }
             }
             &:not(:last-of-type){
-                margin-bottom: 10px;
+                margin-bottom: 16px;
             }
         }
     }
 }
 .sec__members{
+    padding-bottom: 18px;
     overflow: hidden;
     .members{
         &__notify{
             position: relative;
-            margin-bottom: 20px;
-            padding: 30px 32px;
+            margin-bottom: 34px;
+            padding: 30px 28px 28px;
             background-color: $col-white;
             box-shadow: 0 3px 6px rgba($color: $col-black, $alpha: 0.15);
             overflow: hidden;
             border-radius: 15px;
             &__title{
-                margin-bottom: 10px;
+                margin-bottom: 13px;
                 padding-left: 34px;
-                background: transparent url(../../images/top/icon_info_pink.png) no-repeat 0 0;
+                background: transparent url(../../images/top/icon_info_pink.png) no-repeat 0 5px;
                 background-size: 23px auto;
                 font-family: $font-source;
                 font-size: rem(15);
@@ -119,21 +121,21 @@
                 color: $col-pink;
             }
             &__note{
-                padding-right: 160px;
+                padding: 0 160px 0 33px;
                 font-size: rem(12);
                 color: $col-gray;
             }
             .link__arrow{
                 position: absolute;
-                right: 32px;
-                bottom: 30px;
+                right: 41px;
+                bottom: 29px;
                 color: #868686;
             }
         }
         &__blogs{
             display: flex;
             flex-flow: row wrap;
-            margin: 0 -12.5px;
+            margin: 0 -12.5px 7px;
         }
         &__blog{
             margin-bottom: 25px;
@@ -141,19 +143,18 @@
             width: 33.333333%;
             &__inner{
                 display: flex;
-                justify-content: center;
                 align-items: center;
-                padding: 12px 28px;
+                padding: 14px 30px 12px;
                 background-color: #E3E3E3;
                 height: 100%;
                 border-radius: 15px;
             }
             &__img{
                 flex-shrink: 0;
-                width: 28px;
+                width: 32px;
             }
             &__des{
-                padding-left: 28px;
+                padding-left: 24px;
                 h3{
                     font-family: $font-source;
                     font-size: rem(26);
@@ -162,14 +163,36 @@
                     color: $col-white;
                 }
                 .btn--link{
-                    margin-top: 6px;
+                    margin: 5px 0 0 8px;
+                    padding: 7px 34px 6px 24px;
                     background-color: rgba($color: $col-black, $alpha: 0.2);
+                    background-position: right 17px center;
+                    min-width: 147px;
                     border: none;
+                    text-align: center;
                 }
             }
             &--active{
                 .members__blog__inner{
                     background-color: #008553;
+                }
+            }
+            &--procedure{
+                .members__blog__inner{
+                    justify-content: center;
+                    padding-left: 10px;
+                    padding-right: 43px;
+                }
+                .members__blog__des{
+                    padding-left: 30px;
+                }
+            }
+            &--authen{
+                .members__blog__inner{
+                    padding: 14px 18px 12px 41px;
+                }
+                .members__blog__des{
+                    padding-left: 15px;
                 }
             }
             &:not(:nth-child(3n)){
@@ -178,7 +201,7 @@
                 &:after{
                     content: '';
                     position: absolute;
-                    right: -5.5px;
+                    right: -3.5px;
                     top: 50%;
                     background: transparent url(../../images/common/arrow_rgt.png) no-repeat;
                     background-size: 100% auto;
@@ -202,7 +225,7 @@
     .fee{
         &__wrapper{
             position: relative;
-            padding: 25px 21px;
+            padding: 23px 25px 25px;
             background-color: #008553;
             border-radius: 15px;
             color: $col-white;
@@ -211,35 +234,43 @@
                 content:'';
                 position: absolute;
                 left: 8px;
-                bottom: 14px;
+                bottom: 16px;
                 background: transparent url(../../images/common/icon_wallet_gr.png) no-repeat;
-                background-size: 30px auto;
-                width: 30px;
-                height: 26px;
-                transform: rotate(-13deg);
+                background-size: 100% auto;
+                width: 35px;
+                height: 31px;
                 z-index: -1;
             }
         }
         &__lbl{
-            padding-left: 22px;
-            background: transparent url(../../images/common/icon_wallet.png) no-repeat;
+            margin-bottom: 12px;
+            padding-left: 25px;
+            background: transparent url(../../images/common/icon_wallet.png) no-repeat 0 2px;
             background-size: 16px auto;
             font-size: rem(13);
             font-weight: 500;
             color: rgba($color: $col-white, $alpha: 0.8);
             span{
+                display: inline-block;
+                margin-right: 15px;
                 font-size: rem(16);
                 font-weight: bold;
                 color: $col-white;
+                letter-spacing: -1px;
             }
         }
         &__detail{
             display: flex;
             justify-content: space-between;
-            align-items: center;
             .btn--link{
+                margin-bottom: 4px;
+                align-self: flex-end;
+                padding: 6px 30px 8px 17px;
                 background-color: rgba($color: $col-black, $alpha: 0.2);
+                background-position: right 8px center;
+                background-size: 15px auto;
                 min-width: auto;
+                height: auto;
                 border: none;
             }
         }
@@ -257,7 +288,7 @@
     .coin{
         &__wrapper{
             position: relative;
-            padding: 25px 21px;
+            padding: 23px 25px 26px;
             background-color: $col-white;
             border-radius: 15px;
             color: $col-dfault;
@@ -265,13 +296,12 @@
             &:before{
                 content:'';
                 position: absolute;
-                left: 8px;
-                bottom: 10px;
+                left: 7px;
+                bottom: 9px;
                 background: transparent url(../../images/common/icon_coin_large.png) no-repeat;
-                background-size: 36px auto;
-                width: 36px;
-                height: 36px;
-                transform: rotate(-1deg);
+                background-size: 100% auto;
+                width: 37px;
+                height: 37px;
                 z-index: -1;
             }
         }
@@ -279,10 +309,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 16px;
+            margin-bottom: 21px;
         }
         &__lbl{
-            padding-left: 22px;
+            padding-left: 25px;
             background: transparent url(../../images/common/icon_coin_sm.png) no-repeat;
             background-size: 18px auto;
             font-weight: bold;
@@ -296,6 +326,9 @@
                 min-width: auto;
                 border: none;
             }
+            .link__arrow--orange{
+                background-size: 14px auto;
+            }
         }
         &__price{
             font-family: $font-m1;
@@ -308,6 +341,7 @@
                 font-family: $font-noto;
                 font-size: rem(16);
                 font-weight: 500;
+                letter-spacing: -5px;
             }
         }
     }
@@ -325,7 +359,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding: 25px 14px;
+                padding: 23px 14px 22px;
                 height: 100%;
                 box-shadow: 0 3px 6px rgba($color: $col-black, $alpha: 0.15);
                 border-radius: 15px;
@@ -333,8 +367,8 @@
                 color: $col-dfault;
             }
             &__icon{
-                margin-bottom: 18px;
-                width: 40px;
+                margin-bottom: 20px;
+                width: 44px;
             }
             &:nth-of-type(2n){
                 margin-right: 0;
@@ -343,7 +377,11 @@
     }
 }
 .sec__proplems{
+    padding-bottom: 17px;
     overflow: hidden;
+    .sec__title{
+        margin-bottom: 20px;
+    }
     .proplems{
         &__list{
             display: flex;
@@ -357,7 +395,7 @@
             &__inner{
                 position: relative;
                 display: block;
-                padding: 18px 16px 14px;
+                padding: 15px 16px 10px;
                 height: 100%;
                 border-radius: 15px;
                 text-align: center;
@@ -366,7 +404,7 @@
                 &:before{
                     content: '';
                     position: absolute;
-                    left: 28px;
+                    left: 25px;
                     top: 0;
                     bottom: 0;
                     margin: auto 0;
@@ -378,10 +416,11 @@
             }
             &__lbl{
                 display: inline-block;
-                margin-bottom: 8px;
+                margin-bottom: 3px;
                 padding-left: 22px;
                 background-color: transparent;
                 background-repeat: no-repeat;
+                background-position: 2px 2px;
                 background-size: 16px auto;
                 font-size: rem(15);
                 font-weight: 500;
@@ -396,6 +435,7 @@
                 .proplems__item__inner{
                     background-color: #17AF4F;
                     &:before{
+                        left: 35px;
                         background-image: url(../../images/top/proplem_icon_mess.png);
                         width: 38px;
                         height: 34px;
@@ -410,8 +450,8 @@
                     background-color: #028552;
                     &:before{
                         background-image: url(../../images/top/proplem_icon_qa.png);
-                        width: 24px;
-                        height: 34px;
+                        width: 30px;
+                        height: 36px;
                     }
                 }
                 .proplems__item__lbl{
@@ -422,7 +462,11 @@
     }
 }
 .sec__benefits{
+    padding-bottom: 19px;
     overflow: hidden;
+    .sec__title{
+        margin-bottom: 21px;
+    }
     .benefits{
         &__list{
             display: flex;
@@ -445,24 +489,24 @@
                 overflow: hidden;
                 text-align: center;
             }
-            &__cnt{
-                padding: 10px 16px;
+            &__des{
+                padding: 11px 17px 12px;
             }
             &__lbl{
-                margin-bottom: 10px;
+                margin-bottom: 7px;
             }
             &__ttl{
                 font-size: rem(18);
                 font-weight: bold;
             }
             &__coin{
-                padding: 10px 16px;
+                padding: 5px 16px 3px;
                 background-color: #037249;
                 &:before{
                     content: '';
                     display: inline-block;
                     vertical-align: middle;
-                    margin-right: 4px;
+                    margin: -3px 4px 0 0;
                     background: transparent url(../../images/common/icon_coin_sm.png) no-repeat;
                     background-size: 100% auto;
                     width: 16px;
@@ -477,7 +521,11 @@
     }
 }
 .sec__blogs{
+    padding-bottom: 80px;
     overflow: hidden;
+    .sec__title{
+        margin-bottom: 20px;
+    }
     .blogs{
         &__wrapper{
             display: flex;
@@ -508,13 +556,14 @@
                         content: '';
                         position: absolute;
                         right: 20px;
+                        margin-top: 2px;
                         top: 50%;
                         background: transparent url(../../images/common/arrow_circle_rgt_or.png) no-repeat;
                         background-size: 100% auto;
                         width: 16px;
                         height: 16px;
-                        z-index: -1;
                         transform: translateY(-50%);
+                        z-index: -1;
                     }
                 }
                 &__icon{
@@ -532,13 +581,16 @@
                 }
                 &__des{
                     flex: 1 auto;
-                    padding-left: 10px;
+                    padding: 5px 0 0 12px;
                     width: 100%;
                     span{
+                        display: block;
+                        margin-bottom: 5px;
                         font-size: rem(12);
                         color: rgba($color: $col-black, $alpha: 0.6);
                     }
                     p+span{
+                        margin-bottom: 0;
                         font-size: rem(10);
                         color: #AAAAAA;
                     }

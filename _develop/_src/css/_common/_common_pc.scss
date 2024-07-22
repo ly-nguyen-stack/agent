@@ -74,7 +74,7 @@ body{
             display: block;
             position: absolute;
             height: 100%;
-            width: 150%;
+            width: 100%;
             top: 0;
             left: 0;
         }
@@ -425,13 +425,16 @@ body{
         &--orange{
             background-image: url(../../images/common/arrow_circle_rgt_or.png);
             background-size: 15px auto;
+            letter-spacing: -2px;
         }
         &--white{
             background-image: url(../../images/common/arrow_circle_rgt_wh.png);
             color: $col-white;
         }
         &--gray{
+            padding-right: 41px;
             background-image: url(../../images/common/arrow_circle_rgt_gray.png);
+            letter-spacing: -3px;
             color: $col-gray;
         }
         &--green{
@@ -442,7 +445,7 @@ body{
 // title
 .sec__title{
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 23px;
     padding-left: 16px;
     font-size: rem(20);
     font-weight: bold;
@@ -495,4 +498,8 @@ body{
             }
         }
     }
+}
+// fixedNav
+.nav__fixed{
+    display: none;
 }
