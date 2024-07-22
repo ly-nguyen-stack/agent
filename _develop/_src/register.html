@@ -23,7 +23,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap">
 		<link rel="stylesheet" href="./css/normalize.css">
 		<link rel="stylesheet" href="./css/common.css">
-		<link rel="stylesheet" href="./css/top.css">
+		<link rel="stylesheet" href="./css/register.css">
 	</head>
 	<body class="container">
 		<!-- header -->
@@ -190,26 +190,28 @@
                                             <label for="#">生年月日</label>
                                         </div>
                                         <div class="form__control__input">
-                                            <select name="DOB_year" id="">
-                                                <option value="0">選択なし</option>
-                                                <option value="2024">2024</option>
-                                                <option value="2023">2023</option>
-                                                <option value="2022">2022</option>
-                                            </select>
-                                            <select name="DOB_month" id="">
-                                                <option value="0">選択なし</option>
-                                                <option value="01">01</option>
-                                                <option value="02">02</option>
-                                                <option value="03">03</option>
-                                                <option value="04">04</option>
-                                            </select>
-                                            <select name="DOB_day" id="">
-                                                <option value="0">選択なし</option>
-                                                <option value="01">01</option>
-                                                <option value="02">02</option>
-                                                <option value="03">03</option>
-                                                <option value="04">04</option>
-                                            </select>
+                                            <div class="selects">
+                                                <select name="DOB_year" id="">
+                                                    <option value="0">選択なし</option>
+                                                    <option value="2024">2024</option>
+                                                    <option value="2023">2023</option>
+                                                    <option value="2022">2022</option>
+                                                </select>
+                                                <select name="DOB_month" id="">
+                                                    <option value="0">選択なし</option>
+                                                    <option value="01">01</option>
+                                                    <option value="02">02</option>
+                                                    <option value="03">03</option>
+                                                    <option value="04">04</option>
+                                                </select>
+                                                <select name="DOB_day" id="">
+                                                    <option value="0">選択なし</option>
+                                                    <option value="01">01</option>
+                                                    <option value="02">02</option>
+                                                    <option value="03">03</option>
+                                                    <option value="04">04</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="form__control form__control--required">
@@ -269,26 +271,29 @@
                                         <div class="form__control__input">
                                             <input type="text" placeholder="8文字以上の大文字小文字英数">
                                         </div>
-                                    </div>
-                                    <div class="form__control">
                                         <div class="form__control__checkbox">
-                                            <label for="">パスワードを表示する</label>
-                                            <input type="checkbox">
+                                            <label class="control__label control__label--checkbox">
+                                                <input type="checkbox" name="password-validate" id="show-password"/>
+                                                <span class="check"></span>
+                                                パスワードを表示する
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form__blog">
-                                    <h2 class="form__blog__title">個人情報のお取り扱いについて</h2>
-                                    <div class="form__blog__main">
-                                        <div class="privacy__inner">
-                                            <p>当社は、お取引に伴いお客様の個人情報をいただいております。<br>この書面は、お取引に伴い入手するお客様の個人情報の保護とお取り扱いにつきまして、個人情報保護法の規定に従いご説明するものです。<br>当社は、お取引に伴いお客様の個人情報をいただいております。<br>この書面は、お取引に伴い入手するお客様の個人情報の保護とお取り扱いにつきまして、個人情報保護法の規定に従いご説明するものです。</p>
-                                        </div>
-                                        <a href="#" class="link__arrow_rgt">個人情報保護方針</a>
+                            </div>
+                            <div class="form__blog form__blog--privacy">
+                                <h2 class="form__blog__title">個人情報のお取り扱いについて</h2>
+                                <div class="form__blog__cnt">
+                                    <div class="privacy__inner">
+                                        <p>当社は、お取引に伴いお客様の個人情報をいただいております。<br>この書面は、お取引に伴い入手するお客様の個人情報の保護とお取り扱いにつきまして、個人情報保護法の規定に従いご説明するものです。<br>当社は、お取引に伴いお客様の個人情報をいただいております。<br>この書面は、お取引に伴い入手するお客様の個人情報の保護とお取り扱いにつきまして、個人情報保護法の規定に従いご説明するものです。</p>
+                                    </div>
+                                    <div class="privacy__links">
+                                        <a href="#" class="link__arrow link__arrow--green">個人情報保護方針</a>
                                     </div>
                                 </div>
-                                <div class="form__btns">
-                                    <button type="submit" class="btn__login">同意して確認画面に進む</button>
-                                </div>
+                            </div>
+                            <div class="form__btns">
+                                <button type="submit" class="btn btn--login">同意して確認画面に進む</button>
                             </div>
                         </form>
                     </div>

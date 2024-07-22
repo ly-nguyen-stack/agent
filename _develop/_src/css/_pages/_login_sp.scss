@@ -1,16 +1,19 @@
 .sec__login{
-    padding: 10px 10px;
+    padding: vw(6);
     min-height: 100vh;
     background-color: $col-white;
     .row{
-        height: 100%;
+        min-height: calc(100vh - vw(12));
         padding-left: 0;
         padding-right: 0;
     }
     .login{
         &__wrapper{
             position: relative;
-            padding: 120px 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: vw(58) vw(14) vw(88);
             height: 100%;
             z-index: 1;
             &:after{
@@ -20,29 +23,35 @@
                 top: 0;
                 right: 0;
                 bottom: 0;
-                background: transparent url(../../images/login/login_bgr.jpg) no-repeat;
+                background: transparent url(../../images/login/login_bgr_sp.jpg) no-repeat;
                 background-size: cover;
-                border-radius: 140px;
+                border-radius: vw(70);
                 z-index: -1;
             }
         }
         &__logo{
-            margin-bottom: 30px;
+            margin-bottom: vw(28);
+            padding-right: vw(5);
             text-align: center;
             img{
-                max-width: 436px;
+                max-width: vw(218);
             }
         }
         &__blog{
-            padding: 48px 30px;
+            padding: vw(25) vw(15) vw(28);
             background-color: rgba($color: $col-white, $alpha: 0.89);
-            box-shadow: 0 6px 12px rgba($color: $col-black, $alpha: 0.15);
-            border-radius: 30px;
+            box-shadow: 0 vw(6) vw(12) rgba($color: $col-black, $alpha: 0.15);
+            border-radius: vw(15);
+            &--register{
+                padding-top: vw(15);
+                padding-bottom: vw(19);
+            }
             .register{
                 &__title{
-                    margin-bottom: 26px;
+                    margin-bottom: vw(35);
+                    padding-left: vw(5);
                     font-family: $font-source;
-                    font-size: vw(24);
+                    font-size: vw(12);
                     font-weight: 400;
                     color: $col-green2;
                     text-align: center;
@@ -52,25 +61,30 @@
                 }
             }
             &:not(:last-child){
-                margin-bottom: 30px;
+                margin-bottom: vw(32);
             }
         }
     }
     .form{
         &__control{
             &__label{
-                font-size: vw(24);
+                font-size: vw(12);
                 color: $col-gray;
             }
             &__input{
+                margin-right: vw(3);
                 input{
                     background-color: transparent;
                     border-color: $col-green1;
-                    font-size: vw(28);
+                    font-size: vw(14);
                 }
+            }
+            &__checkbox{
+                padding-top: vw(6);
             }
         }
         &__btns{
+            margin-top: vw(34);
             text-align: center;
         }
     }

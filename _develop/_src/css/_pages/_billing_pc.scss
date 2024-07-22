@@ -1,0 +1,178 @@
+main{
+    .inner{
+        max-width: 798px;
+    }
+}
+.sec__fee{
+    overflow: hidden;
+    .fee{
+        &__intro{
+            position: relative;
+            margin-bottom: 80px;
+            padding: 22px 56px;
+            background-color: #028552;
+            border-radius: 15px;
+            color: $col-white;
+            z-index: 1;
+            &:after{
+                content: '';
+                position: absolute;
+                left: 18px;
+                bottom: 18px;
+                background: transparent url(../../images/common/icon_wallet_gr.png) no-repeat;
+                background-size: 100% auto;
+                width: 66px;
+                height: 58px;
+                transform: rotate(-13deg);
+                z-index: -1;
+            }
+            &__lbl{
+                margin-bottom: 16px;
+                padding: 5px 0 5px 40px;
+                background: transparent url(../../images/common/icon_wallet.png) no-repeat;
+                background-size: 30px auto;
+                color: rgba($color: $col-white, $alpha: 0.8);
+                time{
+                    font-family: $font-m1;
+                    font-size: rem(26);
+                    font-weight: bold;
+                    color: $col-white;
+                }
+                span{
+                    font-size: rem(20);
+                    font-weight: bold;
+                    color: $col-white;
+                }
+            }
+            &__blog{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-bottom: 18px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgba($color: $col-white, $alpha: 0.3);
+                .btn{
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    background-color: rgba($color: $col-green1, $alpha: 0.6);
+                    min-width: 288px;
+                    border-radius: 50px;
+                    text-align: center;
+                    border: none;
+                }
+            }
+            &__price{
+                font-family: $font-m1;
+                font-size: rem(60);
+                font-weight: bold;
+                color: $col-white;
+                span{
+                    font-family: $font-noto;
+                    font-size: rem(30);
+                    font-weight: 500;
+                }
+            }
+            &__des{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+            }
+            &__item{
+                display: flex;
+                margin-bottom: 10px;
+                font-size: rem(18);
+                dt{
+                    flex-shrink: 0;
+                    font-weight: 500;
+                }
+                dd{
+                    flex: 1 auto;
+                    width: 100%;
+                    padding-left: 10px;
+                    font-family: $font-m1;
+                    font-weight: bold;
+                }
+            }
+        }
+        &__detail{
+            &__ttl{
+                margin-bottom: 16px;
+                padding-bottom: 10px;
+                border-bottom: 2px solid rgba($color: $col-green1, $alpha: 0.6);
+                font-family: $font-m1;
+                font-size: rem(22);
+                font-weight: bold;
+                color: rgba($color: $col-green1, $alpha: 0.6);
+            }
+            &__blogs{
+                display: flex;
+                flex-flow: row wrap;
+                margin: 0 -17px;
+            }
+        }
+        &__art{
+            margin-bottom: 28px;
+            padding: 0 17px;
+            width: 50%;
+            &__inner{
+                padding: 25px 21px;
+                background-color: $col-white;
+                box-shadow: 0 3px 6px rgba($color: $col-black, $alpha: 0.15);
+                border-radius: 15px;
+            }
+            &__title{
+                margin-bottom: 15px;
+                font-size: rem(26);
+                font-weight: bold;
+                span{
+                    display: inline-block;
+                    padding-left: 10px;
+                    font-family: $font-m1;
+                }
+            }
+        }
+        &__item{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 14px;
+            border-bottom: 1px solid #DCDCDC;
+            &__title{
+                flex-shrink: 0;
+                font-size: rem(14);
+            }
+            &__des{
+                padding-left: 10px;
+                font-family: $font-m1;
+                font-size: rem(16);
+                font-weight: bold;
+                span{
+                    display: inline-block;
+                    font-family: $font-noto;
+                    font-size: rem(12);
+                    font-weight: 500;
+                }
+            }
+            &:first-of-type{
+                .fee__item__title{
+                    font-weight: bold;
+                }
+                .fee__item__des{
+                    font-size: rem(20);
+                }
+            }
+        }
+        &__total{
+            margin-top: 10px;
+            display: flex;
+            justify-content: flex-end;
+            font-size: rem(12);
+            font-weight: 500;
+            color: $col-green1;
+            span{
+                font-family: $font-m1;
+                font-size: rem(20);
+                font-weight: bold;
+            }
+        }
+    }
+}
