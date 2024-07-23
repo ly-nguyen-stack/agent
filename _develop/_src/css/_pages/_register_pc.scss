@@ -3,16 +3,19 @@ main{
         max-width: 798px;
     }
 }
+.breadcrumb{
+    margin-bottom: 53px;
+}
 .sec__register{
     .step{
         &__list{
-            margin-bottom: 30px;
+            margin-bottom: 66px;
             display: flex;
+            justify-content: space-between;
             overflow: hidden;
         }
         &__item{
             position: relative;
-            width: 25%;
             font-family: $font-source;
             list-style-type: none;
             color: $col-gray;
@@ -27,7 +30,7 @@ main{
                 width: 15px;
                 height: 15px;
                 border-radius: 50%;
-                margin: 0 auto 5px;
+                margin: 0 auto 7px;
             }
             &:after{
                 position: absolute;
@@ -60,6 +63,56 @@ main{
     .register{
         &__form{
             padding-bottom: 100px;
+        }
+    }
+    .form{
+        &__group{
+            margin-top: 30px;
+            .form__control:not(:first-child){
+                margin-top: 0;
+            }
+        }
+        &__control{
+            .control__label{
+                margin-bottom: 0;
+                padding-left: 23px;
+            }
+            &__label{
+                padding-left: 2px;
+            }
+            &__input{
+                input{
+                    height: 46px;
+                    font-size: rem(16);
+                }
+            }
+            &__checkbox{
+                margin-top: 10px;
+            }
+            &:not(:first-child){
+                margin-top: 11px;
+            }
+        }
+        &__blog{
+            &:not(.form__blog--privacy){
+                .form__blog__cnt{
+                    padding: 60px 131px 32px 127px;
+                }
+            }
+            &:not(.form__blog--privacy):not(:last-child){
+                margin-bottom: 65px;
+            }
+        }
+        &__btns{
+            padding-right: 49px;
+            .btn--login{
+                margin: 0 auto;
+                padding: 12px 40px 10px;
+                background-size: 16px auto;
+                max-width: 544px;
+                font-size: rem(16);
+                font-weight: bold;
+            }
         }
     }
 }

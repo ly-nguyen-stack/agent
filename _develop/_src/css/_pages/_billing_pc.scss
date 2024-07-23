@@ -3,13 +3,16 @@ main{
         max-width: 798px;
     }
 }
+.breadcrumb{
+    margin-bottom: 52px;
+}
 .sec__fee{
     overflow: hidden;
     .fee{
         &__intro{
             position: relative;
-            margin-bottom: 80px;
-            padding: 22px 56px;
+            margin-bottom: 88px;
+            padding: 26px 58px 37px 60px;
             background-color: #028552;
             border-radius: 15px;
             color: $col-white;
@@ -17,19 +20,19 @@ main{
             &:after{
                 content: '';
                 position: absolute;
-                left: 18px;
-                bottom: 18px;
+                left: 20px;
+                bottom: 36px;
                 background: transparent url(../../images/common/icon_wallet_gr.png) no-repeat;
                 background-size: 100% auto;
-                width: 66px;
-                height: 58px;
+                width: 78px;
+                height: 72px;
                 transform: rotate(-13deg);
                 z-index: -1;
             }
             &__lbl{
-                margin-bottom: 16px;
-                padding: 5px 0 5px 40px;
-                background: transparent url(../../images/common/icon_wallet.png) no-repeat;
+                margin-bottom: 23px;
+                padding: 5px 0 5px 54px;
+                background: transparent url(../../images/common/icon_wallet.png) no-repeat 10px 6px;
                 background-size: 30px auto;
                 color: rgba($color: $col-white, $alpha: 0.8);
                 time{
@@ -49,12 +52,13 @@ main{
                 justify-content: space-between;
                 align-items: flex-end;
                 margin-bottom: 18px;
-                padding-bottom: 10px;
+                padding-bottom: 8px;
                 border-bottom: 1px solid rgba($color: $col-white, $alpha: 0.3);
                 .btn{
-                    padding-top: 15px;
-                    padding-bottom: 15px;
+                    margin-bottom: 5px;
+                    padding: 15px 54px 15px 28px;
                     background-color: rgba($color: $col-green1, $alpha: 0.6);
+                    background-size: right 36px center;
                     min-width: 288px;
                     border-radius: 50px;
                     text-align: center;
@@ -62,14 +66,16 @@ main{
                 }
             }
             &__price{
-                font-family: $font-m1;
-                font-size: rem(60);
-                font-weight: bold;
+                font-size: rem(30);
+                font-weight: 500;
                 color: $col-white;
                 span{
-                    font-family: $font-noto;
-                    font-size: rem(30);
-                    font-weight: 500;
+                    display: inline-block;
+                    margin-right: 21px;
+                    font-family: $font-m1;
+                    font-size: rem(60);
+                    font-weight: bold;
+                    letter-spacing: -1.5px;
                 }
             }
             &__des{
@@ -96,8 +102,8 @@ main{
         }
         &__detail{
             &__ttl{
-                margin-bottom: 16px;
-                padding-bottom: 10px;
+                margin-bottom: 25px;
+                padding-bottom: 11px;
                 border-bottom: 2px solid rgba($color: $col-green1, $alpha: 0.6);
                 font-family: $font-m1;
                 font-size: rem(22);
@@ -115,28 +121,31 @@ main{
             padding: 0 17px;
             width: 50%;
             &__inner{
-                padding: 25px 21px;
+                padding: 27px 21px 30px;
                 background-color: $col-white;
                 box-shadow: 0 3px 6px rgba($color: $col-black, $alpha: 0.15);
                 border-radius: 15px;
             }
             &__title{
-                margin-bottom: 15px;
-                font-size: rem(26);
+                margin-bottom: 4px;
+                font-size: rem(16);
                 font-weight: bold;
+                letter-spacing: -3px;
                 span{
                     display: inline-block;
-                    padding-left: 10px;
+                    padding-left: 5px;
                     font-family: $font-m1;
+                    letter-spacing: 0;
                 }
             }
         }
         &__item{
             display: flex;
             justify-content: space-between;
-            padding: 10px 14px;
+            padding: 10px 14px 10px 9px;
             border-bottom: 1px solid #DCDCDC;
             &__title{
+                padding-top: 2px;
                 flex-shrink: 0;
                 font-size: rem(14);
             }
@@ -154,6 +163,7 @@ main{
             }
             &:first-of-type{
                 .fee__item__title{
+                    padding-top: 6px;
                     font-weight: bold;
                 }
                 .fee__item__des{
@@ -163,12 +173,15 @@ main{
         }
         &__total{
             margin-top: 10px;
+            padding-right: 13px;
             display: flex;
             justify-content: flex-end;
             font-size: rem(12);
             font-weight: 500;
             color: $col-green1;
             span{
+                display: inline-block;
+                padding: 0 1px 0 4px;
                 font-family: $font-m1;
                 font-size: rem(20);
                 font-weight: bold;

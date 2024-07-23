@@ -120,10 +120,16 @@ body{
 .form{
     &__group{
         display: flex;
-        margin: 0 -37px;
+        flex-flow: row wrap;
+        margin: 0 -6px;
         .form__control{
-            padding: 0 37px;
+            margin-bottom: 17px;
+            padding: 0 6px;
             width: 50%;
+            &:nth-last-child(-n + 2):nth-child(2n + 1),
+            &:nth-last-child(-n + 2):nth-child(2n + 1) ~ .form__control {
+               margin-bottom: 0;
+            }
         }
     }
     &__control{
@@ -266,9 +272,9 @@ body{
                         }
                     }
                 }
-            }
-            &:last-child{
-                margin-bottom: 0;
+                &:last-child{
+                    margin-bottom: 0;
+                }
             }
         }
         &--required{
@@ -295,13 +301,13 @@ body{
             padding: 26px 18px;
             background-color: rgba($color: $col-green1, $alpha: 0.06);
             font-family: $font-source;
-            font-size: rem(20);
+            font-size: rem(14);
             font-weight: bold;
             color: $col-green2;
             text-align: center;
         }
         &__cnt{
-            padding: 34px 132px;
+            padding: 34px 10px;
         }
         &--privacy{
             margin-bottom: 60px;
@@ -318,7 +324,7 @@ body{
                 text-align: right;
             }
         }
-        &:not(:last-child){
+        &:not(.form__blog--privacy):not(:last-child){
             margin-bottom: 40px;
         }
     }
@@ -357,6 +363,7 @@ body{
         background-image: url(../../images/common/arrow_circle_rgt_gray.png);
         border-color: #EBE8E8;
         font-family: $font-source;
+        font-size: rem(14);
         color: $col-gray;
     }
     &--link{

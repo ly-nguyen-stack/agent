@@ -135,10 +135,16 @@ body{
 .form{
     &__group{
         display: flex;
+        flex-flow: row wrap;
         margin: 0 -37px;
         .form__control{
+            margin-bottom: 17px;
             padding: 0 37px;
             width: 50%;
+            &:nth-last-child(-n + 2):nth-child(2n + 1),
+            &:nth-last-child(-n + 2):nth-child(2n + 1) ~ .form__control {
+               margin-bottom: 0;
+            }
         }
     }
     &__control{
@@ -238,11 +244,13 @@ body{
                 font-size: rem(16);
                 color: $col-gray;
                 .check {
+                    top: 4px;
+                    left: 1px;
                     border-radius: 50%;
                     border-color: #707070;
                     &:after {
                         left: 1.5px;
-                        top: 2.5px;
+                        top: 2px;
                         height: 7px;
                         width: 7px;
                         border-radius: 50%;
@@ -281,9 +289,9 @@ body{
                         }
                     }
                 }
-            }
-            &:last-child{
-                margin-bottom: 0;
+                &:last-child{
+                    margin-bottom: 0;
+                }
             }
         }
         &--required{
@@ -291,7 +299,7 @@ body{
                 content: '※';
                 display: inline-block;
                 vertical-align: top;
-                margin-left: 5px;
+                margin-left: 6px;
                 font-family: $font-source;
                 color: #FF0808;
                 font-size: rem(8);
@@ -307,7 +315,7 @@ body{
         border-radius: 15px;
         overflow: hidden;
         &__title{
-            padding: 26px 18px;
+            padding: 26px 18px 27px;
             background-color: rgba($color: $col-green1, $alpha: 0.06);
             font-family: $font-source;
             font-size: rem(20);
@@ -316,12 +324,12 @@ body{
             text-align: center;
         }
         &__cnt{
-            padding: 34px 132px;
+            padding: 16px 128px 32px 129px;
         }
         &--privacy{
-            margin-bottom: 60px;
+            margin-bottom: 70px;
             .form__blog__cnt{
-                padding: 32px 26px 14px;
+                padding: 34px 24px 14px;
                 line-height: 1.5;
                 color: $col-gray;
             }
@@ -330,10 +338,12 @@ body{
                 overflow-y: auto;
             }
             .privacy__links{
+                margin-top: 32px;
+                padding-right: 14px;
                 text-align: right;
             }
         }
-        &:not(:last-child){
+        &:not(.form__blog--privacy):not(:last-child){
             margin-bottom: 40px;
         }
     }
@@ -368,8 +378,10 @@ body{
         color: $col-green1;
     }
     &--return{
+        padding: 12px 36px 12px 30px;
         background-color: #EBE8E8;
         background-image: url(../../images/common/arrow_circle_rgt_gray.png);
+        background-size: 16px auto;
         border-color: #EBE8E8;
         font-family: $font-source;
         color: $col-gray;
@@ -389,7 +401,8 @@ body{
     }
     &--other{
         display: inline-block;
-        padding: 6px 8px;
+        margin: 12px 0 0;
+        padding: 7px 8px 6px 4px;
         background-color: $col-white;
         min-width: 190px;
         width: auto;
@@ -428,8 +441,11 @@ body{
             letter-spacing: -2px;
         }
         &--white{
+            padding-right: 49px;
             background-image: url(../../images/common/arrow_circle_rgt_wh.png);
             color: $col-white;
+            letter-spacing: -5px;
+            font-size: rem(18);
         }
         &--gray{
             padding-right: 41px;
@@ -438,7 +454,10 @@ body{
             color: $col-gray;
         }
         &--green{
+            padding-right: 47px;
             background-image: url(../../images/common/arrow_circle_rgt_gr.png);
+            font-size: rem(16);
+            background-size: 21px auto;
         }
     }
 }
@@ -464,7 +483,7 @@ body{
 }
 // breadcrumb
 .breadcrumb{
-    margin: 52px 0 64px;
+    margin: 50px 0 64px;
     &__list {
         line-height: 1.4;
         overflow: hidden;
@@ -472,23 +491,22 @@ body{
         white-space: nowrap;
         li {
             display: inline;
-            font-weight: 400;
-            letter-spacing: .1em;
             color: $col-green;
+            letter-spacing: -5px;
         }
         a {
             position: relative;
-            margin-right: 40px;
+            margin-right: 52px;
             color: $col-dfault;
             font-weight: 500;
             &:after {
                 content: "";
                 display: block;
                 position: absolute;
-                right: -27px;
+                right: -37px;
                 background: transparent url(../../images/common/arrow_rgt.png) no-repeat;
                 background-size: 100% auto;
-                width: 4px;
+                width: 5px;
                 height: 8px;
                 top: 50%;
                 transform: translateY(-50%);
