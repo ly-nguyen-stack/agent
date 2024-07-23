@@ -1,15 +1,10 @@
-main{
-    .inner{
-        max-width: 798px;
-    }
-}
 .breadcrumb{
-    margin-bottom: 53px;
+    margin-bottom: vw(43);
 }
 .sec__register{
     .step{
         &__list{
-            margin-bottom: 66px;
+            margin-bottom: vw(44);
             display: flex;
             justify-content: space-between;
             overflow: hidden;
@@ -20,6 +15,7 @@ main{
             list-style-type: none;
             color: $col-gray;
             text-align: center;
+            font-size: vw(12);
             &:before,
             &:after{
                 content: '';
@@ -27,17 +23,17 @@ main{
             }
             &:before{
                 display: block;
-                width: 15px;
-                height: 15px;
+                width: vw(15);
+                height: vw(15);
                 border-radius: 50%;
-                margin: 0 auto 7px;
+                margin: 0 auto vw(11);
             }
             &:after{
                 position: absolute;
                 left: -50%;
-                top: 7px;
+                top: vw(7);
                 width: 100%;
-                height: 1px;
+                height: vw(1);
                 z-index: -1;
             }
             &--active{
@@ -54,20 +50,23 @@ main{
     .selects{
         display: flex;
         select{
-            width: calc(33.3333% - 2.5px);
+            width: calc(33.3333% - vw(2.5));
             &:not(:nth-child(3n)){
-                margin-right: 5px;
+                margin-right: vw(5);
             }
         }
     }
     .register{
         &__form{
-            padding-bottom: 100px;
+            padding-bottom: vw(100);
         }
     }
     .form{
         &__group{
-            margin-top: 30px;
+            margin-top: vw(43);
+            .form__control__label{
+                margin-bottom: vw(2);
+            }
             .form__control:not(:first-child){
                 margin-top: 0;
             }
@@ -75,43 +74,38 @@ main{
         &__control{
             .control__label{
                 margin-bottom: 0;
-                padding-left: 23px;
+                padding-left: vw(21);
             }
             &__label{
-                padding-left: 2px;
+                margin-bottom: vw(7);
+                font-size: vw(12);
             }
             &__input{
                 input{
-                    height: 46px;
-                    font-size: rem(16);
+                    font-size: vw(12);
                 }
             }
             &__checkbox{
-                margin-top: 10px;
+                margin: vw(5) 0 0 vw(8);
             }
             &:not(:first-child){
-                margin-top: 11px;
+                margin-top: vw(36);
             }
         }
         &__blog{
             &:not(.form__blog--privacy){
                 .form__blog__cnt{
-                    padding: 20px 10px;
+                    padding: vw(38) vw(15) vw(47);
                 }
             }
             &:not(.form__blog--privacy):not(:last-child){
-                margin-bottom: 65px;
+                margin-bottom: vw(47);
             }
         }
         &__btns{
-            padding-right: 49px;
             .btn--login{
                 margin: 0 auto;
-                padding: 12px 40px 10px;
-                background-size: 16px auto;
-                max-width: 544px;
-                font-size: rem(16);
-                font-weight: bold;
+                padding: vw(8) vw(40);
             }
         }
     }

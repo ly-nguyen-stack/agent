@@ -1,0 +1,178 @@
+.breadcrumb{
+    margin-bottom: 52px;
+}
+.sec__fee{
+    overflow: hidden;
+    .fee{
+        &__intro{
+            position: relative;
+            margin-bottom: vw(51);
+            padding: vw(22) vw(19) vw(22) vw(21);
+            background-color: #028552;
+            border-radius: vw(15);
+            color: $col-white;
+            z-index: 1;
+            &:after{
+                content: '';
+                position: absolute;
+                left: vw(15);
+                bottom: vw(16);
+                background: transparent url(../../images/common/icon_wallet_gr.png) no-repeat;
+                background-size: 100% auto;
+                width: vw(34);
+                height: vw(32);
+                z-index: -1;
+            }
+            &__lbl{
+                margin-bottom: vw(2);
+                padding: vw(5) 0 vw(5) vw(54);
+                background: transparent url(../../images/common/icon_wallet.png) no-repeat vw(10) vw(6);
+                background-size: vw(16) auto;
+                color: rgba($color: $col-white, $alpha: 0.8);
+                font-size: vw(12);
+                time{
+                    font-family: $font-m1;
+                    font-size: vw(18);
+                    font-weight: bold;
+                    color: $col-white;
+                }
+                span{
+                    font-size: vw(15);
+                    font-weight: bold;
+                    color: $col-white;
+                }
+            }
+            &__blog{
+                margin-bottom: vw(19);
+                padding-bottom: vw(21);
+                border-bottom: 1px solid rgba($color: $col-white, $alpha: 0.3);
+            }
+            &__price{
+                font-size: vw(16);
+                font-weight: 500;
+                color: $col-white;
+                text-align: center;
+                span{
+                    display: inline-block;
+                    margin-right: vw(10);
+                    font-family: $font-m1;
+                    font-size: vw(32);
+                    font-weight: bold;
+                    letter-spacing: vw(-1.5);
+                }
+            }
+            &__item{
+                display: flex;
+                margin-bottom: vw(11);
+                padding-left: vw(21);
+                font-size: vw(14);
+                dt{
+                    flex-shrink: 0;
+                    font-weight: 500;
+                }
+                dd{
+                    flex: 1 auto;
+                    width: 100%;
+                    padding-left: vw(10);
+                    font-family: $font-m1;
+                    font-weight: bold;
+                }
+            }
+            .btn--link{
+                display: block;
+                margin: 0 auto;
+                margin-bottom: vw(5);
+                padding: vw(12) vw(54) vw(10) vw(28);
+                background-color: rgba($color: $col-green1, $alpha: 0.6);
+                background-position: right vw(36) center;
+                max-width: vw(264);
+                border-radius: vw(50);
+                text-align: center;
+                border: none;
+            }
+        }
+        &__detail{
+            &__ttl{
+                margin-bottom: vw(25);
+                padding-bottom: vw(2);
+                border-bottom: 2px solid rgba($color: $col-green1, $alpha: 0.6);
+                font-family: $font-m1;
+                font-size: vw(18);
+                font-weight: bold;
+                color: rgba($color: $col-green1, $alpha: 0.6);
+            }
+        }
+        &__art{
+            margin-bottom:vw(31);
+            &__inner{
+                padding:vw(26)vw(21)vw(32);
+                background-color: $col-white;
+                box-shadow: 0 vw(3) vw(6) rgba($color: $col-black, $alpha: 0.15);
+                border-radius: vw(15);
+            }
+            &__title{
+                margin-bottom: vw(5);
+                font-size: vw(16);
+                font-weight: bold;
+                letter-spacing: vw(-3);
+                span{
+                    display: inline-block;
+                    padding-left: vw(5);
+                    font-family: $font-m1;
+                    letter-spacing: 0;
+                }
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &__item{
+            display: flex;
+            justify-content: space-between;
+            padding: vw(10) vw(9);
+            border-bottom: 1px solid #DCDCDC;
+            &__title{
+                padding-top: vw(2);
+                flex-shrink: 0;
+                font-size: vw(14);
+            }
+            &__des{
+                padding-left: vw(10);
+                font-family: $font-m1;
+                font-size: vw(16);
+                font-weight: bold;
+                span{
+                    display: inline-block;
+                    font-family: $font-noto;
+                    font-size: vw(12);
+                    font-weight: 500;
+                }
+            }
+            &:first-of-type{
+                .fee__item__title{
+                    padding-top: vw(7);
+                    font-weight: bold;
+                }
+                .fee__item__des{
+                    font-size: vw(20);
+                }
+            }
+        }
+        &__total{
+            margin-top: vw(9);
+            padding-right: vw(10);
+            display: flex;
+            justify-content: flex-end;
+            font-size: vw(12);
+            font-weight: 500;
+            color: $col-green1;
+            span{
+                display: inline-block;
+                padding: 0 vw(1) 0 vw(4);
+                font-family: $font-m1;
+                font-size: vw(20);
+                font-weight: bold;
+            }
+        }
+    }
+}

@@ -105,13 +105,26 @@ main{
         }
         &__controls{
             display: flex;
+            flex-flow: row wrap;
             align-items: center;
-            margin-bottom: 10px;
+            input{
+                order: 1;
+            }
             &__lbl{
                 padding: 0 40px 0 23px;
                 font-family: $font-source;
                 font-size: rem(14);
                 color: $col-gray;
+                order: 2;
+            }
+            .btn--other{
+                margin: 12px 0 0;
+                order: 3;
+            }
+            .note{
+                margin-top: 10px;
+                width: 100%;
+                order: 4;
             }
         }
     }

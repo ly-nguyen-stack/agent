@@ -51,8 +51,8 @@ $config_sp_scale_font : 2;
 //   @return #{$rem}rem;
 // }
 // breakpoint ---------------------------------------------------------------------------
-$breakpoint-pc: 769px;
-$breakpoint-sp: 768px;
+$breakpoint-pc: 960px;
+$breakpoint-sp: 499px;
 
 $font-source: 'SourceHanSansJP', sans-serif;
 $font-noto: "Noto Sans JP", sans-serif;
@@ -72,7 +72,7 @@ $col-black: #000000;
   }
 }
 @mixin mid-screen() {
-  @media screen and (max-width: 1024px) and (min-width: 769px) {
+  @media screen and (min-width: 499px) and (max-width: 959px) {
     @content;
   }
 }

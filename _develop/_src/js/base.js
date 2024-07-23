@@ -213,6 +213,7 @@ window.addEventListener('DOMContentLoaded', function() {
   // new Menusp();
   // new Sticky();
   new Anchor();
+  new headerMenu();
 });
 var Effect = (function() {
   function Effect() {
@@ -340,4 +341,42 @@ var Anchor = (function () {
       .addEventListener('DOMMouseScroll', a.stopEverything, false);
   }
   return Anchor;
+})();
+var headerMenu = (function () {
+  function headerMenu() {
+    this.initMenu = function() {
+      let _target = document.getElementById('navIcon');
+      let _nav = document.getElementById('navBar');
+      console.log(_target,_nav);
+      _target.addEventListener('click', () => {
+        if (_target.classList.contains('active')) {
+          _target.classList.remove('active');
+          _nav.classList.remove('active');
+          document.body.classList.remove('overlay');
+        } else {
+          _target.classList.add('active');
+          _nav.classList.add('active');
+          document.body.classList.add('overlay');
+        }
+      });
+    }
+    this.stickyMenu = function() {
+      let _header = document.getElementById('header');
+      const _forPc = (left) => {
+        _header.style.left = -left + "px";
+      }
+      const _hand = () => {
+        let _left = document.documentElement.scrollLeft || document.body.scrollLeft;
+        if (window.innerWidth > 499) {
+          _forPc(_left);
+        }else return;
+      }
+      window.addEventListener('scroll', _hand, false);
+      window.addEventListener('resize', _hand, false);
+      window.addEventListener('load', _hand, false);
+    }
+    this.initMenu()
+    this.stickyMenu()
+  }
+  return headerMenu;
 })();
