@@ -107,7 +107,7 @@
         &__notify{
             position: relative;
             margin-bottom: vw(25);
-            padding: vw(25) vw(15) vw(17) vw(20);
+            padding: vw(28) vw(15) vw(17) vw(20);
             background-color: $col-white;
             box-shadow: 0 vw(3) vw(6) rgba($color: $col-black, $alpha: 0.15);
             overflow: hidden;
@@ -118,8 +118,8 @@
                 clear: right;
             }
             &__title{
-                margin-bottom: vw(8);
-                padding-left: vw(22);
+                margin-bottom: vw(6);
+                padding-left: vw(20);
                 background: transparent url(../../images/top/icon_info_pink.png) no-repeat 0 vw(3);
                 background-size: vw(15) auto;
                 font-family: $font-source;
@@ -129,9 +129,10 @@
                 color: $col-pink;
             }
             &__note{
-                margin-bottom: vw(14);
+                margin-bottom: vw(12);
                 padding-left: vw(22);
                 font-size: vw(12);
+                line-height: 1.4;
                 color: $col-gray;
             }
             .link__arrow{
@@ -161,14 +162,14 @@
                 &:after{
                     content: '';
                     position: absolute;
-                    right: 30px;
+                    right: vw(28);
                     top: 0;
                     bottom: 0;
                     margin: auto 0;
                     background: transparent url(../../images/common/arrow_checked.png) no-repeat;
                     background-size: 100% auto;
-                    width: 26px;
-                    height: 20px;
+                    width: vw(26);
+                    height: vw(20);
                     z-index: -1;
                 }
             }

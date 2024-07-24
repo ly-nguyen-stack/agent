@@ -1,0 +1,18 @@
+.sec__register{
+    .form{
+        &__blog{
+            &:not(.form__blog--privacy){
+                .form__blog__cnt{
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+            }
+        }
+        &__btns{
+            padding-right: 0;
+            .btn--login{
+                max-width: 480px;
+            }
+        }
+    }
+}

@@ -4,6 +4,9 @@
 @include min-screen() {
   @import "./_pages/_billing_pc";
 }
+@include mid-screen() {
+  @import "./_pages/_billing_tb";
+}
 @include max-screen() {
   @import "./_pages/_billing_sp";
 }

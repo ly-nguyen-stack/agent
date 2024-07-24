@@ -1,0 +1,32 @@
+main{
+    .inner{
+        max-width: 798px;
+    }
+}
+.sec__coin{
+    .coin{
+        &__banner{
+            padding-left: 18px;
+            padding-right: 10px;
+            &:after{
+                left: 8px;
+                bottom: 8px;
+            }
+            &__lbl{
+                font-size: rem(18);
+            }
+            &__price{
+                font-size: rem(22);
+                span{
+                    font-size: rem(52);
+                    margin-right: 10px;
+                }
+            }
+        }
+        &__controls{
+            &__lbl{
+                padding: 0 16px 0 10px;
+            }
+        }
+    }
+}

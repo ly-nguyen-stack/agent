@@ -27,64 +27,68 @@
 	</head>
 	<body class="container">
 		<!-- header -->
-		<header class="header">
-			<div class="row">
-				<div class="header__inner">
-					<h1 class="header__logo"><a href="#"><img src="./images/icon/header_logo.png" alt="agent CLUB"></a></h1>
-					<nav class="header__nav">
-						<div class="header__nav__inner">
-							<ul class="header__nav__menu">
-								<li><a href="#">HOME</a></li>
-								<li>
-									<a href="#">会員メニュー</a>
-									<ul>
-										<li><a href="#">請求一覧</a></li>
-										<li><a href="#">請求詳細</a></li>
-										<li><a href="#">aコイン交換</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">入居中のお困りごと</a>
-									<ul>
-										<li><a href="#">RESQ PLUS</a></li>
-										<li><a href="#">お困りごとFAQ</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">各種手続き</a>
-									<ul>
-										<li><a href="#">各種手続き・申請</a></li>
-										<li><a href="#">口座受付サービス</a></li>
-										<li><a href="#">解約手続き</a></li>
-										<li><a href="#">各種手続き履歴</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">不動産のご相談</a>
-									<ul>
-										<li><a href="#">賃貸物件をお探しの方</a></li>
-										<li><a href="#">不動産売買のご相談</a></li>
-										<li><a href="#">資産運用のご相談</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">アカウント</a>
-									<ul>
-										<li><a href="#">アカウント変更</a></li>
-										<li><a href="#">ログアウト</a></li>
-									</ul>
-								</li>
-							</ul>
-							<div class="header__nav__lg">
-								<a href="#"><img src="./images/icon/header_logo.png" alt=""></a>
-							</div>
-						</div>
-					</nav>
-					<div class="header__burger">
-						<span class="burger__lines"></span>
-					</div>
+		<header id="header" class="header">
+			<div class="header__main">
+				<div class="row">
+					<h1 class="header__logo"><a href="#"><img src="./images/common/header_logo_gr.png" alt="agent CLUB"></a></h1>
 				</div>
 			</div>
+			<div class="header__menu">
+				<div class="header__burger" id="navIcon">
+					<span class="header__burger__lines"></span>
+				</div>
+			</div>
+			<nav id="navBar" class="header__navbar">
+				<div class="navbar__wrapper">
+					<div class="navbar__inner">
+						<ul class="navbar__menu">
+							<li><a href="#">HOME</a></li>
+							<li>
+								<a href="#">会員メニュー</a>
+								<ul class="navbar__submenu">
+									<li><a href="#">請求一覧</a></li>
+									<li><a href="#">請求詳細</a></li>
+									<li><a href="#">aコイン交換</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">入居中のお困りごと</a>
+								<ul class="navbar__submenu">
+									<li><a href="#">RESQ PLUS</a></li>
+									<li><a href="#">お困りごとFAQ</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">各種手続き</a>
+								<ul class="navbar__submenu">
+									<li><a href="#">各種手続き・申請</a></li>
+									<li><a href="#">口座受付サービス</a></li>
+									<li><a href="#">解約手続き</a></li>
+									<li><a href="#">各種手続き履歴</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">不動産のご相談</a>
+								<ul class="navbar__submenu">
+									<li><a href="#">賃貸物件をお探しの方</a></li>
+									<li><a href="#">不動産売買のご相談</a></li>
+									<li><a href="#">資産運用のご相談</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">アカウント</a>
+								<ul class="navbar__submenu">
+									<li><a href="#">アカウント変更</a></li>
+									<li><a href="#">ログアウト</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="navbar__lg">
+							<a href="#"><img src="./images/common/header_logo_gr.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</nav>
 		</header>
 		<!-- main -->
 		<main class="main">
@@ -121,11 +125,11 @@
                                 <div class="form__blog__cnt">
                                     <div class="form__control">
                                         <div class="form__control__label">
-                                            <label for="#">案内方法</label>
+                                            <p>案内方法</p>
                                         </div>
                                         <div class="form__control__radio">
                                             <label class="control__label control__label--radio">
-                                                <input type="radio" name="guidance_method" id="guidance_method_01">
+                                                <input type="radio" name="guidance_method" id="guidance_method_01" checked>
                                                 <span class="check"></span>個人
                                             </label>
                                             <label class="control__label control__label--radio">
@@ -137,44 +141,44 @@
                                     <div class="form__group">
                                         <div class="form__control form__control--required">
                                             <div class="form__control__label">
-                                                <label for="#">性</label>
+                                                <label for="person-sex">性</label>
                                             </div>
                                             <div class="form__control__input">
-                                                <input type="text" placeholder="例）XXX" required>
+                                                <input type="text" placeholder="例）XXX" id="person-sex" required>
                                             </div>
                                         </div>
                                         <div class="form__control form__control--required">
                                             <div class="form__control__label">
-                                                <label for="#">名</label>
+                                                <label for="person-name">名</label>
                                             </div>
                                             <div class="form__control__input">
-                                                <input type="text" placeholder="例）XXX" required>
+                                                <input type="text" placeholder="例）XXX" id="person-name" required>
                                             </div>
                                         </div>
                                         <div class="form__control form__control--required">
                                             <div class="form__control__label">
-                                                <label for="#">セイ</label>
+                                                <label for="person-surname">セイ</label>
                                             </div>
                                             <div class="form__control__input">
-                                                <input type="text" placeholder="例）XXX" required>
+                                                <input type="text" placeholder="例）XXX" id="person-surname" required>
                                             </div>
                                         </div>
                                         <div class="form__control form__control--required">
                                             <div class="form__control__label">
-                                                <label for="#">メイ</label>
+                                                <label for="person-may">メイ</label>
                                             </div>
                                             <div class="form__control__input">
-                                                <input type="text" placeholder="例）XXX" required>
+                                                <input type="text" placeholder="例）XXX" id="person-may" required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form__control">
                                         <div class="form__control__label">
-                                            <label for="#">性別</label>
+                                            <p>性別</p>
                                         </div>
                                         <div class="form__control__radio">
                                             <label class="control__label control__label--radio">
-                                                <input type="radio" name="gender" id="male">
+                                                <input type="radio" name="gender" id="male" checked>
                                                 <span class="check"></span>男性
                                             </label>
                                             <label class="control__label control__label--radio">
@@ -185,25 +189,25 @@
                                     </div>
                                     <div class="form__control form__control--required">
                                         <div class="form__control__label">
-                                            <label for="#">生年月日</label>
+                                            <p>生年月日</p>
                                         </div>
                                         <div class="form__control__input">
                                             <div class="selects">
-                                                <select name="DOB_year" id="">
-                                                    <option value="0">選択なし</option>
+                                                <select name="DOB_year" id="dob-year" required>
+                                                    <option value="">選択なし</option>
                                                     <option value="2024">2024</option>
                                                     <option value="2023">2023</option>
                                                     <option value="2022">2022</option>
                                                 </select>
-                                                <select name="DOB_month" id="">
-                                                    <option value="0">選択なし</option>
+                                                <select name="DOB_month" id="dob-month" required>
+                                                    <option value="">選択なし</option>
                                                     <option value="01">01</option>
                                                     <option value="02">02</option>
                                                     <option value="03">03</option>
                                                     <option value="04">04</option>
                                                 </select>
-                                                <select name="DOB_day" id="">
-                                                    <option value="0">選択なし</option>
+                                                <select name="DOB_day" id="dob-day" required>
+                                                    <option value="">選択なし</option>
                                                     <option value="01">01</option>
                                                     <option value="02">02</option>
                                                     <option value="03">03</option>
@@ -214,64 +218,64 @@
                                     </div>
                                     <div class="form__control form__control--required">
                                         <div class="form__control__label">
-                                            <label for="#">郵便番号</label>
+                                            <label for="person-post-code">郵便番号</label>
                                         </div>
                                         <div class="form__control__input">
-                                            <input type="text" placeholder="例）1231234">
+                                            <input type="text" placeholder="例）1231234" id="person-post-code" required>
                                         </div>
                                     </div>
                                     <div class="form__control form__control--required">
                                         <div class="form__control__label">
-                                            <label for="#">都道府県</label>
+                                            <label for="person-prefectures">都道府県</label>
                                         </div>
                                         <div class="form__control__input">
-                                            <select name="" id="">
-                                                <option value="0">選択なし</option>
+                                            <select name="person-prefectures" id="person-prefectures" required>
+                                                <option value="">選択なし</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="form__control form__control--required">
                                         <div class="form__control__label">
-                                            <label for="#">住所</label>
+                                            <label for="person-address">住所</label>
                                         </div>
                                         <div class="form__control__input">
-                                            <input type="text" placeholder="例）松山市XX町XXX-XX">
+                                            <input type="text" placeholder="例）松山市XX町XXX-XX" id="person-address" required>
                                         </div>
                                     </div>
                                     <div class="form__control">
                                         <div class="form__control__label">
-                                            <label for="#">建物名</label>
+                                            <label for="person-building-name">建物名</label>
                                         </div>
                                         <div class="form__control__input">
-                                            <input type="text" placeholder="例）マンション名、ビル名-XX">
+                                            <input type="text" placeholder="例）マンション名、ビル名-XX" id="person-building-name">
                                         </div>
                                     </div>
                                     <div class="form__control form__control--required">
                                         <div class="form__control__label">
-                                            <label for="#">電話番号</label>
+                                            <label for="person-phone">電話番号</label>
                                         </div>
                                         <div class="form__control__input">
-                                            <input type="text" placeholder="例）09012341234">
+                                            <input type="text" placeholder="例）09012341234" id="person-phone" required>
                                         </div>
                                     </div>
                                     <div class="form__control form__control--required">
                                         <div class="form__control__label">
-                                            <label for="#">メールアドレス</label>
+                                            <label for="person-email">メールアドレス</label>
                                         </div>
                                         <div class="form__control__input">
-                                            <input type="text" placeholder="例）XXX＠sample.com">
+                                            <input type="text" placeholder="例）XXX＠sample.com" id="person-email" required>
                                         </div>
                                     </div>
                                     <div class="form__control form__control--required">
                                         <div class="form__control__label">
-                                            <label for="#">パスワード</label>
+                                            <label for="person-pass">パスワード</label>
                                         </div>
                                         <div class="form__control__input">
-                                            <input type="text" placeholder="8文字以上の大文字小文字英数">
+                                            <input type="text" placeholder="8文字以上の大文字小文字英数" id="person-pass">
                                         </div>
                                         <div class="form__control__checkbox">
                                             <label class="control__label control__label--checkbox">
-                                                <input type="checkbox" name="password-validate" id="show-password"/>
+                                                <input type="checkbox" name="password-validate" id="show-password">
                                                 <span class="check"></span>
                                                 パスワードを表示する
                                             </label>
@@ -299,7 +303,17 @@
             </section>
 		</main>
 		<!-- footer -->
-		<footer></footer>
+		<footer class="footer">
+			<div class="nav__fixed">
+				<ul>
+					<li class="nav__item nav__item--home active"><a href="#">ホーム</a></li>
+					<li class="nav__item nav__item--setting"><a href="#">契約内容</a></li>
+					<li class="nav__item nav__item--doc"><a href="#">各種手続</a></li>
+					<li class="nav__item nav__item--faq"><a href="#">FAQ</a></li>
+					<li class="nav__item nav__item--food"><a href="#">繁盛店情報</a></li>
+				</ul>
+			</div>
+		</footer>
 		<!-- scripts -->
 		<script src="./js/libs.js"></script>
 		<script src="./js/base.js"></script>

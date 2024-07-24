@@ -1,0 +1,54 @@
+.sec__fee{
+    .fee{
+        &__intro{
+            padding-left: 20px;
+            padding-right: 20px;
+            &__blog{
+                margin-bottom: 18px;
+                padding-bottom: 8px;
+                .btn{
+                    padding-right: 44px;
+                    padding-left: 16px;
+                    background-position: right 16px center;
+                    min-width: 190px;
+                }
+            }
+            &__lbl{
+                time{
+                    font-size: rem(22);
+                }
+                span{
+                    font-size: rem(18);
+                }
+            }
+            &__price{
+                width: calc(100% - 228px);
+                font-size: rem(18);
+                span{
+                    margin-right: 8px;
+                    font-size: rem(40);
+                }
+            }
+            .btn--link{
+                padding-left: 16px;
+                padding-right: 32px;
+                background-position: right 12px center;
+                min-width: auto;
+                max-width: 198px;
+            }
+        }
+        &__detail{
+            &__blogs{
+                margin: 0 -5px;
+            }
+        }
+        &__art{
+            margin-bottom: 16px;
+            padding: 0 5px;
+            &__inner{
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+        }
+    }
+}

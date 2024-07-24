@@ -1,0 +1,583 @@
+@media screen and (min-width: 500px), print {
+  main .inner {
+    max-width: 818px;
+  }
+  .breadcrumb {
+    margin-bottom: 52px;
+  }
+  .sec__fee {
+    overflow: hidden;
+  }
+  .sec__fee .fee__intro {
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 88px;
+    padding: 25px 58px 37px 60px;
+    background-color: #028552;
+    -moz-border-radius: 15px;
+         border-radius: 15px;
+    color: #ffffff;
+    z-index: 1;
+  }
+  .sec__fee .fee__intro:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    bottom: 36px;
+    background: transparent url(../../images/common/icon_wallet_gr.png) no-repeat;
+    -moz-background-size: 100% auto;
+         background-size: 100% auto;
+    width: 78px;
+    height: 72px;
+    z-index: -1;
+  }
+  .sec__fee .fee__intro__lbl {
+    margin-bottom: 23px;
+    padding: 5px 0 5px 54px;
+    background: transparent url(../../images/common/icon_wallet.png) no-repeat 10px 6px;
+    -moz-background-size: 30px auto;
+         background-size: 30px auto;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-box-ordinal-group: 2;
+       -moz-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+  }
+  .sec__fee .fee__intro__lbl time {
+    font-family: "M PLUS 1p", sans-serif;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .sec__fee .fee__intro__lbl span {
+    display: inline-block;
+    margin: 0 9px 0 8px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .sec__fee .fee__intro__price {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #ffffff;
+    -webkit-box-ordinal-group: 3;
+       -moz-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+        -ms-flex: 1 auto;
+            flex: 1 auto;
+  }
+  .sec__fee .fee__intro__price span {
+    display: inline-block;
+    margin-right: 21px;
+    font-family: "M PLUS 1p", sans-serif;
+    font-size: 6rem;
+    font-weight: bold;
+    letter-spacing: -1.5px;
+  }
+  .sec__fee .fee__intro__des {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 7px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-box-ordinal-group: 5;
+       -moz-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+        -ms-flex: 1 auto;
+            flex: 1 auto;
+    width: 100%;
+  }
+  .sec__fee .fee__intro__item {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+  .sec__fee .fee__intro__item dt {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    font-weight: 500;
+  }
+  .sec__fee .fee__intro__item dd {
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+        -ms-flex: 1 auto;
+            flex: 1 auto;
+    width: 100%;
+    padding-left: 10px;
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: bold;
+  }
+  .sec__fee .fee__intro .btn--link {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-bottom: 5px;
+    padding: 15px 54px 15px 28px;
+    background-color: rgba(0, 92, 64, 0.6);
+    background-position: right 36px center;
+    min-width: 288px;
+    -moz-border-radius: 50px;
+         border-radius: 50px;
+    text-align: center;
+    border: none;
+    -webkit-box-ordinal-group: 4;
+       -moz-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .sec__fee .fee__detail__ttl {
+    margin-bottom: 25px;
+    padding-bottom: 11px;
+    border-bottom: 2px solid rgba(0, 92, 64, 0.6);
+    font-family: "M PLUS 1p", sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: rgba(0, 92, 64, 0.6);
+  }
+  .sec__fee .fee__detail__blogs {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+       -moz-box-orient: horizontal;
+       -moz-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    margin: 0 -17px;
+  }
+  .sec__fee .fee__art {
+    margin-bottom: 28px;
+    padding: 0 17px;
+    width: 50%;
+  }
+  .sec__fee .fee__art__inner {
+    padding: 27px 21px 30px;
+    background-color: #ffffff;
+    -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    -moz-border-radius: 15px;
+         border-radius: 15px;
+  }
+  .sec__fee .fee__art__title {
+    margin-bottom: 4px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: -3px;
+  }
+  .sec__fee .fee__art__title span {
+    display: inline-block;
+    padding-left: 5px;
+    font-family: "M PLUS 1p", sans-serif;
+    letter-spacing: 0;
+  }
+  .sec__fee .fee__item {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px 14px 10px 9px;
+    border-bottom: 1px solid #DCDCDC;
+  }
+  .sec__fee .fee__item__title {
+    padding-top: 2px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    font-size: 1.4rem;
+  }
+  .sec__fee .fee__item__des {
+    padding-left: 10px;
+    font-family: "M PLUS 1p", sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  .sec__fee .fee__item__des span {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .sec__fee .fee__item:first-of-type .fee__item__title {
+    padding-top: 6px;
+    font-weight: bold;
+  }
+  .sec__fee .fee__item:first-of-type .fee__item__des {
+    font-size: 2rem;
+  }
+  .sec__fee .fee__total {
+    margin-top: 10px;
+    padding-right: 13px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+       -moz-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #005C40;
+  }
+  .sec__fee .fee__total span {
+    display: inline-block;
+    padding: 0 1px 0 4px;
+    font-family: "M PLUS 1p", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+@media screen and (min-width: 499px) and (max-width: 959px) {
+  .sec__fee .fee__intro {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sec__fee .fee__intro__blog {
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+  }
+  .sec__fee .fee__intro__blog .btn {
+    padding-right: 44px;
+    padding-left: 16px;
+    background-position: right 16px center;
+    min-width: 190px;
+  }
+  .sec__fee .fee__intro__lbl time {
+    font-size: 2.2rem;
+  }
+  .sec__fee .fee__intro__lbl span {
+    font-size: 1.8rem;
+  }
+  .sec__fee .fee__intro__price {
+    width: -webkit-calc(100% - 228px);
+    width: -moz-calc(100% - 228px);
+    width: calc(100% - 228px);
+    font-size: 1.8rem;
+  }
+  .sec__fee .fee__intro__price span {
+    margin-right: 8px;
+    font-size: 4rem;
+  }
+  .sec__fee .fee__intro .btn--link {
+    padding-left: 16px;
+    padding-right: 32px;
+    background-position: right 12px center;
+    min-width: auto;
+    max-width: 198px;
+  }
+  .sec__fee .fee__detail__blogs {
+    margin: 0 -5px;
+  }
+  .sec__fee .fee__art {
+    margin-bottom: 16px;
+    padding: 0 5px;
+  }
+  .sec__fee .fee__art__inner {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .breadcrumb {
+    margin-bottom: 5.6vw;
+  }
+  .sec__fee {
+    padding-bottom: 26.6666666667vw;
+    overflow: hidden;
+  }
+  .sec__fee .fee__pagi {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 3.2vw;
+  }
+  .sec__fee .fee__pagi .btn--link {
+    padding: 2.9333333333vw 9.3333333333vw 2.4vw 4vw;
+    -moz-background-size: 3.7333333333vw auto;
+         background-size: 3.7333333333vw auto;
+    background-position: right 3.7333333333vw center;
+    -moz-border-radius: 13.3333333333vw;
+         border-radius: 13.3333333333vw;
+    font-size: 3.7333333333vw;
+  }
+  .sec__fee .fee__pagi__list {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sec__fee .fee__pagi__list li:not(:last-child) {
+    margin-right: 2.6666666667vw;
+  }
+  .sec__fee .fee__pagi__list .btn {
+    margin-bottom: 0;
+    padding: 1.6vw 2.4vw 1.6vw 8.2666666667vw;
+    background-color: #ffffff;
+    -moz-background-size: 3.7333333333vw auto;
+         background-size: 3.7333333333vw auto;
+    -moz-border-radius: 8vw;
+         border-radius: 8vw;
+    color: #005C40;
+    min-width: 18.6666666667vw;
+    width: auto;
+    font-size: 3.7333333333vw;
+    text-align: left;
+  }
+  .sec__fee .fee__pagi__list .btn--prev {
+    background-image: url(../../images/common/arrow_circle_rgt_prev.png);
+    background-position: 2.4vw center;
+  }
+  .sec__fee .fee__pagi__list .btn--next {
+    padding-right: 6.6666666667vw;
+    padding-left: 2.1333333333vw;
+    background-image: url(../../images/common/arrow_circle_rgt_next.png);
+    background-position: right 2.4vw center;
+  }
+  .sec__fee .fee__intro {
+    position: relative;
+    margin-bottom: 13.6vw;
+    padding: 5.8666666667vw 5.0666666667vw 5.8666666667vw 5.6vw;
+    background-color: #028552;
+    -moz-border-radius: 4vw;
+         border-radius: 4vw;
+    color: #ffffff;
+    z-index: 1;
+  }
+  .sec__fee .fee__intro:after {
+    content: "";
+    position: absolute;
+    left: 4vw;
+    bottom: 4.2666666667vw;
+    background: transparent url(../../images/common/icon_wallet_gr.png) no-repeat;
+    -moz-background-size: 100% auto;
+         background-size: 100% auto;
+    width: 9.0666666667vw;
+    height: 8.5333333333vw;
+    z-index: -1;
+  }
+  .sec__fee .fee__intro__lbl {
+    margin-bottom: 1.0666666667vw;
+    padding: 0.8vw 0 1.3333333333vw 14.4vw;
+    background: transparent url(../../images/common/icon_wallet.png) no-repeat 8.2666666667vw 2.1333333333vw;
+    -moz-background-size: 4.2666666667vw auto;
+         background-size: 4.2666666667vw auto;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 3.2vw;
+  }
+  .sec__fee .fee__intro__lbl time {
+    font-family: "M PLUS 1p", sans-serif;
+    font-size: 4.8vw;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .sec__fee .fee__intro__lbl span {
+    font-size: 4vw;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .sec__fee .fee__intro__price {
+    font-size: 4.2666666667vw;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+  }
+  .sec__fee .fee__intro__price span {
+    display: inline-block;
+    margin-right: 2.6666666667vw;
+    font-family: "M PLUS 1p", sans-serif;
+    font-size: 8.5333333333vw;
+    font-weight: bold;
+    letter-spacing: -0.4vw;
+  }
+  .sec__fee .fee__intro__des {
+    margin-bottom: 4vw;
+    padding-top: 5.3333333333vw;
+    margin-top: 5.0666666667vw;
+    border-top: 0.5333333333vw solid rgba(255, 255, 255, 0.3);
+  }
+  .sec__fee .fee__intro__item {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1.8666666667vw;
+    padding-left: 5.6vw;
+    font-size: 3.7333333333vw;
+  }
+  .sec__fee .fee__intro__item dt {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    font-weight: 500;
+  }
+  .sec__fee .fee__intro__item dd {
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+        -ms-flex: 1 auto;
+            flex: 1 auto;
+    width: 100%;
+    padding-left: 2.6666666667vw;
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: bold;
+  }
+  .sec__fee .fee__intro .btn--link {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.3333333333vw;
+    padding: 3.2vw 14.4vw 2.6666666667vw 7.4666666667vw;
+    background-color: rgba(0, 92, 64, 0.6);
+    background-position: right 9.6vw center;
+    max-width: 70.4vw;
+    -moz-border-radius: 13.3333333333vw;
+         border-radius: 13.3333333333vw;
+    text-align: center;
+    border: none;
+  }
+  .sec__fee .fee__detail__ttl {
+    margin-bottom: 6.6666666667vw;
+    padding-bottom: 0.5333333333vw;
+    border-bottom: 0.5333333333vw solid rgba(0, 92, 64, 0.6);
+    font-family: "M PLUS 1p", sans-serif;
+    font-size: 4.8vw;
+    font-weight: bold;
+    color: rgba(0, 92, 64, 0.6);
+  }
+  .sec__fee .fee__art {
+    margin-bottom: 8.2666666667vw;
+  }
+  .sec__fee .fee__art__inner {
+    padding: 6.9333333333vw 5.6vw 8.5333333333vw;
+    background-color: #ffffff;
+    -moz-box-shadow: 0 0.8vw 1.6vw rgba(0, 0, 0, 0.15);
+         box-shadow: 0 0.8vw 1.6vw rgba(0, 0, 0, 0.15);
+    -moz-border-radius: 4vw;
+         border-radius: 4vw;
+  }
+  .sec__fee .fee__art__title {
+    margin-bottom: 1.3333333333vw;
+    font-size: 4.2666666667vw;
+    font-weight: bold;
+    letter-spacing: -0.8vw;
+  }
+  .sec__fee .fee__art__title span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 1.3333333333vw;
+    font-family: "M PLUS 1p", sans-serif;
+    letter-spacing: 0;
+  }
+  .sec__fee .fee__art:last-child {
+    margin-bottom: 0;
+  }
+  .sec__fee .fee__item {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2.6666666667vw 2.4vw;
+    border-bottom: 1px solid #DCDCDC;
+  }
+  .sec__fee .fee__item__title {
+    padding-top: 0.5333333333vw;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    font-size: 3.7333333333vw;
+  }
+  .sec__fee .fee__item__des {
+    padding-left: 2.6666666667vw;
+    font-family: "M PLUS 1p", sans-serif;
+    font-size: 4.2666666667vw;
+    font-weight: bold;
+  }
+  .sec__fee .fee__item__des span {
+    display: inline-block;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 3.2vw;
+    font-weight: 500;
+  }
+  .sec__fee .fee__item:first-of-type .fee__item__title {
+    padding-top: 1.8666666667vw;
+    font-weight: bold;
+  }
+  .sec__fee .fee__item:first-of-type .fee__item__des {
+    font-size: 5.3333333333vw;
+  }
+  .sec__fee .fee__total {
+    margin-top: 2.4vw;
+    padding-right: 2.6666666667vw;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+       -moz-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-size: 3.2vw;
+    font-weight: 500;
+    color: #005C40;
+  }
+  .sec__fee .fee__total span {
+    display: inline-block;
+    padding: 0 0.2666666667vw 0 1.0666666667vw;
+    font-family: "M PLUS 1p", sans-serif;
+    font-size: 5.3333333333vw;
+    font-weight: bold;
+  }
+}

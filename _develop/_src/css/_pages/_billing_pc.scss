@@ -1,6 +1,6 @@
 main{
     .inner{
-        max-width: 798px;
+        max-width: 818px;
     }
 }
 .breadcrumb{
@@ -11,8 +11,11 @@ main{
     .fee{
         &__intro{
             position: relative;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
             margin-bottom: 88px;
-            padding: 26px 58px 37px 60px;
+            padding: 25px 58px 37px 60px;
             background-color: #028552;
             border-radius: 15px;
             color: $col-white;
@@ -26,7 +29,6 @@ main{
                 background-size: 100% auto;
                 width: 78px;
                 height: 72px;
-                transform: rotate(-13deg);
                 z-index: -1;
             }
             &__lbl{
@@ -35,6 +37,8 @@ main{
                 background: transparent url(../../images/common/icon_wallet.png) no-repeat 10px 6px;
                 background-size: 30px auto;
                 color: rgba($color: $col-white, $alpha: 0.8);
+                order: 1;
+                width: 100%;
                 time{
                     font-family: $font-m1;
                     font-size: rem(26);
@@ -42,33 +46,19 @@ main{
                     color: $col-white;
                 }
                 span{
+                    display: inline-block;
+                    margin: 0 9px 0 8px;
                     font-size: rem(20);
                     font-weight: bold;
                     color: $col-white;
-                }
-            }
-            &__blog{
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
-                margin-bottom: 18px;
-                padding-bottom: 8px;
-                border-bottom: 1px solid rgba($color: $col-white, $alpha: 0.3);
-                .btn{
-                    margin-bottom: 5px;
-                    padding: 15px 54px 15px 28px;
-                    background-color: rgba($color: $col-green1, $alpha: 0.6);
-                    background-position: right 36px center;
-                    min-width: 288px;
-                    border-radius: 50px;
-                    text-align: center;
-                    border: none;
                 }
             }
             &__price{
                 font-size: rem(30);
                 font-weight: 500;
                 color: $col-white;
+                order: 2;
+                flex: 1 auto;
                 span{
                     display: inline-block;
                     margin-right: 21px;
@@ -82,6 +72,12 @@ main{
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-between;
+                margin-top: 7px;
+                padding-top: 18px;
+                border-top: 1px solid rgba($color: $col-white, $alpha: 0.3);
+                order: 4;
+                flex: 1 auto;
+                width: 100%;
             }
             &__item{
                 display: flex;
@@ -98,6 +94,19 @@ main{
                     font-family: $font-m1;
                     font-weight: bold;
                 }
+            }
+            .btn--link{
+                flex-shrink: 0;
+                align-self: flex-end;
+                margin-bottom: 5px;
+                padding: 15px 54px 15px 28px;
+                background-color: rgba($color: $col-green1, $alpha: 0.6);
+                background-position: right 36px center;
+                min-width: 288px;
+                border-radius: 50px;
+                text-align: center;
+                border: none;
+                order: 3;
             }
         }
         &__detail{
@@ -156,6 +165,7 @@ main{
                 font-weight: bold;
                 span{
                     display: inline-block;
+                    vertical-align: middle;
                     font-family: $font-noto;
                     font-size: rem(12);
                     font-weight: 500;

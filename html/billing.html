@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="keywords" content="Keywords">
+        <title>BILLING | 請求一覧</title>
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:url" content="https://">
+        <meta property="og:site_name" content="">
+        <meta property="og:image" content="" />
+
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/common.css">
+        <link rel="stylesheet" href="./css/billing.css">
+    </head>
+    <body class="container">
+        <!-- header -->
+        <header id="header" class="header">
+      <div class="header__main">
+        <div class="row">
+          <h1 class="header__logo"><a href="#"><img src="./images/common/header_logo_gr.png" alt="agent CLUB"></a></h1>
+        </div>
+      </div>
+      <div class="header__menu">
+        <div class="header__burger" id="navIcon">
+          <span class="header__burger__lines"></span>
+        </div>
+      </div>
+      <nav id="navBar" class="header__navbar">
+        <div class="navbar__wrapper">
+          <div class="navbar__inner">
+            <ul class="navbar__menu">
+              <li><a href="#">HOME</a></li>
+              <li>
+                <a href="#">会員メニュー</a>
+                <ul class="navbar__submenu">
+                  <li><a href="#">請求一覧</a></li>
+                  <li><a href="#">請求詳細</a></li>
+                  <li><a href="#">aコイン交換</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">入居中のお困りごと</a>
+                <ul class="navbar__submenu">
+                  <li><a href="#">RESQ PLUS</a></li>
+                  <li><a href="#">お困りごとFAQ</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">各種手続き</a>
+                <ul class="navbar__submenu">
+                  <li><a href="#">各種手続き・申請</a></li>
+                  <li><a href="#">口座受付サービス</a></li>
+                  <li><a href="#">解約手続き</a></li>
+                  <li><a href="#">各種手続き履歴</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">不動産のご相談</a>
+                <ul class="navbar__submenu">
+                  <li><a href="#">賃貸物件をお探しの方</a></li>
+                  <li><a href="#">不動産売買のご相談</a></li>
+                  <li><a href="#">資産運用のご相談</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">アカウント</a>
+                <ul class="navbar__submenu">
+                  <li><a href="#">アカウント変更</a></li>
+                  <li><a href="#">ログアウト</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="navbar__lg">
+              <a href="#"><img src="./images/common/header_logo_gr.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+        <!-- main -->
+        <main class="main">
+            <div class="breadcrumb">
+                <div class="inner">
+                    <ul class="breadcrumb__list">
+                        <li><a href="#">マイページ</a></li>
+                        <li>請求一覧</li>
+                    </ul>
+                </div>
+            </div>
+            <section class="sec__fee">
+                <div class="inner">
+                    <div class="fee__pagi show_sp">
+                        <a href="#" class="btn btn--link">最新請求月へ</a>
+                        <ul class="fee__pagi__list">
+                            <li><a href="#" class="btn btn--prev">前月</a></li>
+                            <li><a href="#" class="btn btn--next">翌月</a></li>
+                        </ul>
+                    </div>
+                    <div class="fee__intro">
+                        <p class="fee__intro__lbl"><time datetime="2023-02">2023年2月</time><span>ご請求料金</span>(税込)</p>
+                        <h2 class="fee__intro__price"><span>1,149,952</span>円</h2>
+                        <div class="fee__intro__des">
+                            <dl class="fee__intro__item">
+                                <dt>請求コード：</dt>
+                                <dd>6F414013-8C82-4E3E</dd>
+                            </dl>
+                            <dl class="fee__intro__item">
+                                <dt>請求発行日：</dt>
+                                <dd>2023年2月28日</dd>
+                            </dl>
+                        </div>
+                        <a href="#" class="btn btn--link">支払い証明書発行</a>
+                    </div>
+                    <div class="fee__detail">
+                        <h3 class="fee__detail__ttl">請求内訳</h3>
+                        <div class="fee__detail__blogs">
+                            <article class="fee__art">
+                                <div class="fee__art__inner">
+                                    <h4 class="fee__art__title">松山マンション<span>101</span></h4>
+                                    <div class="fee__art__cnt">
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">賃料</dt>
+                                            <dd class="fee__item__des">55,000<span>円</span></dd>
+                                        </dl>
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">水道料</dt>
+                                            <dd class="fee__item__des">4,250<span>円</span></dd>
+                                        </dl>
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">町会費</dt>
+                                            <dd class="fee__item__des">300<span>円</span></dd>
+                                        </dl>
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">駐車場</dt>
+                                            <dd class="fee__item__des">5,250<span>円</span></dd>
+                                        </dl>
+                                        <div class="fee__total">
+                                            <p>計<span class="fee__total__no">59,800</span>円</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="fee__art">
+                                <div class="fee__art__inner">
+                                    <h4 class="fee__art__title">松山マンション<span>101</span></h4>
+                                    <div class="fee__art__cnt">
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">賃料</dt>
+                                            <dd class="fee__item__des">55,000<span>円</span></dd>
+                                        </dl>
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">水道料</dt>
+                                            <dd class="fee__item__des">4,250<span>円</span></dd>
+                                        </dl>
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">町会費</dt>
+                                            <dd class="fee__item__des">300<span>円</span></dd>
+                                        </dl>
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">駐車場</dt>
+                                            <dd class="fee__item__des">5,250<span>円</span></dd>
+                                        </dl>
+                                        <div class="fee__total">
+                                            <p>計<span class="fee__total__no">59,800</span>円</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="fee__art">
+                                <div class="fee__art__inner">
+                                    <h4 class="fee__art__title">松山マンション<span>101</span></h4>
+                                    <div class="fee__art__cnt">
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">賃料</dt>
+                                            <dd class="fee__item__des">55,000<span>円</span></dd>
+                                        </dl>
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">水道料</dt>
+                                            <dd class="fee__item__des">4,250<span>円</span></dd>
+                                        </dl>
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">町会費</dt>
+                                            <dd class="fee__item__des">300<span>円</span></dd>
+                                        </dl>
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">駐車場</dt>
+                                            <dd class="fee__item__des">5,250<span>円</span></dd>
+                                        </dl>
+                                        <div class="fee__total">
+                                            <p>計<span class="fee__total__no">59,800</span>円</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="fee__art">
+                                <div class="fee__art__inner">
+                                    <h4 class="fee__art__title">松山マンション<span>101</span></h4>
+                                    <div class="fee__art__cnt">
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">賃料</dt>
+                                            <dd class="fee__item__des">55,000<span>円</span></dd>
+                                        </dl>
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">水道料</dt>
+                                            <dd class="fee__item__des">4,250<span>円</span></dd>
+                                        </dl>
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">町会費</dt>
+                                            <dd class="fee__item__des">300<span>円</span></dd>
+                                        </dl>
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">駐車場</dt>
+                                            <dd class="fee__item__des">5,250<span>円</span></dd>
+                                        </dl>
+                                        <div class="fee__total">
+                                            <p>計<span class="fee__total__no">59,800</span>円</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="fee__art">
+                                <div class="fee__art__inner">
+                                    <h4 class="fee__art__title">松山マンション<span>101</span></h4>
+                                    <div class="fee__art__cnt">
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">賃料</dt>
+                                            <dd class="fee__item__des">55,000<span>円</span></dd>
+                                        </dl>
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">水道料</dt>
+                                            <dd class="fee__item__des">4,250<span>円</span></dd>
+                                        </dl>
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">町会費</dt>
+                                            <dd class="fee__item__des">300<span>円</span></dd>
+                                        </dl>
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">駐車場</dt>
+                                            <dd class="fee__item__des">5,250<span>円</span></dd>
+                                        </dl>
+                                        <div class="fee__total">
+                                            <p>計<span class="fee__total__no">59,800</span>円</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="fee__art">
+                                <div class="fee__art__inner">
+                                    <h4 class="fee__art__title">松山マンション<span>101</span></h4>
+                                    <div class="fee__art__cnt">
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">賃料</dt>
+                                            <dd class="fee__item__des">55,000<span>円</span></dd>
+                                        </dl>
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">水道料</dt>
+                                            <dd class="fee__item__des">4,250<span>円</span></dd>
+                                        </dl>
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">町会費</dt>
+                                            <dd class="fee__item__des">300<span>円</span></dd>
+                                        </dl>
+                                        <dl class="fee__item">
+                                            <dt class="fee__item__title">駐車場</dt>
+                                            <dd class="fee__item__des">5,250<span>円</span></dd>
+                                        </dl>
+                                        <div class="fee__total">
+                                            <p>計<span class="fee__total__no">59,800</span>円</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- footer -->
+        <footer class="footer">
+      <div class="nav__fixed">
+        <ul>
+          <li class="nav__item nav__item--home active"><a href="#">ホーム</a></li>
+          <li class="nav__item nav__item--setting"><a href="#">契約内容</a></li>
+          <li class="nav__item nav__item--doc"><a href="#">各種手続</a></li>
+          <li class="nav__item nav__item--faq"><a href="#">FAQ</a></li>
+          <li class="nav__item nav__item--food"><a href="#">繁盛店情報</a></li>
+        </ul>
+      </div>
+    </footer>
+        <!-- scripts -->
+        <script src="./js/libs.js"></script>
+        <script src="./js/base.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

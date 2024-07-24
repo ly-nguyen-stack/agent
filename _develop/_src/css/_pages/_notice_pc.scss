@@ -1,12 +1,15 @@
 main{
     .inner{
-        max-width: 798px;
+        max-width: 818px;
     }
 }
 .sec__coin{
     .coin{
         &__banner{
             position: relative;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-end;
             margin-bottom: 36px;
             padding: 22px 46px 41px 81px;
             background-color: #028552;
@@ -29,12 +32,16 @@ main{
                 padding: 16px 0 10px 65px;
                 background: transparent url(../../images/common/icon_coin_sm.png) no-repeat;
                 background-size: 52px auto;
+                width: 100%;
                 font-size: rem(26);
                 font-weight: bold;
+                order: 1;
             }
             &__price{
+                flex: 1;
                 font-size: rem(30);
                 font-weight: 500;
+                order: 2;
                 span{
                     display: inline-block;
                     margin-right: 20px;
@@ -46,9 +53,8 @@ main{
                 }
             }
             .link__arrow{
-                position: absolute;
-                right: 48px;
-                bottom: 40px;
+                flex-shrink: 0;
+                order: 3;
             }
         }
         &__warning{

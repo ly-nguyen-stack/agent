@@ -1,9 +1,54 @@
 .breadcrumb{
-    margin-bottom: 52px;
+    margin-bottom: vw(21);
 }
 .sec__fee{
+    padding-bottom: vw(100);
     overflow: hidden;
     .fee{
+        &__pagi{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: vw(12);
+            .btn--link{
+                padding: vw(11) vw(35) vw(9) vw(15);
+                background-size: vw(14) auto;
+                background-position: right vw(14) center;
+                border-radius: vw(50);
+                font-size: vw(14);
+            }
+            &__list{
+                display: flex;
+                align-items: center;
+                li{
+                    &:not(:last-child){
+                        margin-right: vw(10);
+                    }
+                }
+                .btn{
+                    margin-bottom: 0;
+                    padding: vw(6) vw(9) vw(6) vw(31);
+                    background-color: $col-white;
+                    background-size: vw(14) auto;
+                    border-radius: vw(30);
+                    color: $col-green1;
+                    min-width: vw(70);
+                    width: auto;
+                    font-size: vw(14);
+                    text-align: left;
+                    &--prev{
+                        background-image: url(../../images/common/arrow_circle_rgt_prev.png);
+                        background-position: vw(9) center;
+                    }
+                    &--next{
+                        padding-right: vw(25);
+                        padding-left: vw(8);
+                        background-image: url(../../images/common/arrow_circle_rgt_next.png);
+                        background-position: right vw(9) center;
+                    }
+                }
+            }
+        }
         &__intro{
             position: relative;
             margin-bottom: vw(51);
@@ -24,9 +69,9 @@
                 z-index: -1;
             }
             &__lbl{
-                margin-bottom: vw(2);
-                padding: vw(5) 0 vw(5) vw(54);
-                background: transparent url(../../images/common/icon_wallet.png) no-repeat vw(10) vw(6);
+                margin-bottom: vw(4);
+                padding: vw(3) 0 vw(5) vw(54);
+                background: transparent url(../../images/common/icon_wallet.png) no-repeat vw(31) vw(8);
                 background-size: vw(16) auto;
                 color: rgba($color: $col-white, $alpha: 0.8);
                 font-size: vw(12);
@@ -42,11 +87,6 @@
                     color: $col-white;
                 }
             }
-            &__blog{
-                margin-bottom: vw(19);
-                padding-bottom: vw(21);
-                border-bottom: 1px solid rgba($color: $col-white, $alpha: 0.3);
-            }
             &__price{
                 font-size: vw(16);
                 font-weight: 500;
@@ -61,9 +101,15 @@
                     letter-spacing: vw(-1.5);
                 }
             }
+            &__des{
+                margin-bottom: vw(15);
+                padding-top: vw(20);
+                margin-top: vw(19);
+                border-top: vw(2) solid rgba($color: $col-white, $alpha: 0.3);
+            }
             &__item{
                 display: flex;
-                margin-bottom: vw(11);
+                margin-bottom: vw(7);
                 padding-left: vw(21);
                 font-size: vw(14);
                 dt{
@@ -95,7 +141,7 @@
             &__ttl{
                 margin-bottom: vw(25);
                 padding-bottom: vw(2);
-                border-bottom: 2px solid rgba($color: $col-green1, $alpha: 0.6);
+                border-bottom: vw(2) solid rgba($color: $col-green1, $alpha: 0.6);
                 font-family: $font-m1;
                 font-size: vw(18);
                 font-weight: bold;
@@ -117,6 +163,7 @@
                 letter-spacing: vw(-3);
                 span{
                     display: inline-block;
+                    vertical-align: middle;
                     padding-left: vw(5);
                     font-family: $font-m1;
                     letter-spacing: 0;

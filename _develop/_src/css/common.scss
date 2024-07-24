@@ -119,6 +119,9 @@ html, body {
 @include min-screen() {
   @import "./_common/_common_pc";
 }
+@include mid-screen() {
+  @import "./_common/_common_tb";
+}
 @include max-screen() {
   @import "./_common/_common_sp";
 }

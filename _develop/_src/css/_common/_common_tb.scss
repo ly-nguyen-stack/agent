@@ -1,0 +1,22 @@
+@charset "utf-8";
+// ===================================================================
+//  common TB
+// ===================================================================
+.container{
+    min-width: 100%;
+}
+// form
+.form{
+    &__group{
+        margin: 0 -10px;
+        .form__control{
+            padding: 0 10px;
+        }
+    }
+    &__blog{
+        &__cnt{
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+    }
+}

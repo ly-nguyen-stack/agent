@@ -1,0 +1,168 @@
+.sec__mainvisual{
+    .mainvisual{
+        &__title{
+            display: flex;
+            span{
+                flex: 1;
+                padding-left: 18px;
+                align-items: flex-start;
+            }
+        }
+    }
+}
+.sec__news{
+    padding-bottom: 42px;
+    .news{
+        &__wrapper{
+            flex-direction: column;
+        }
+        &__head{
+            display: flex;
+            justify-content: space-between;
+            flex-shrink: 0;
+            padding: 24px 16px;
+            width: 100%;
+        }
+        &__title{
+            margin-bottom: 0;
+        }
+        &__cnt{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+.sec__members{
+    .members{
+        &__blog{
+            &__inner{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            &__img{
+                width: 26px;
+            }
+            &__des{
+                padding-left: 8px;
+                h3{
+                    font-size: rem(16);
+                }
+                .btn--link{
+                    margin-left: 0;
+                    padding: 7px 26px 6px 8px;
+                    background-position: right 8px center;
+                    min-width: auto;
+                    font-size: rem(12);
+                }
+            }
+            &--procedure{
+                .members__blog__inner{
+                    padding-right: 10px;
+                }
+                .members__blog__des{
+                    padding-left: 8px;
+                }
+            }
+            &--authen{
+                .members__blog__inner{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+                .members__blog__des{
+                    padding-left: 8px;
+                }
+            }
+        }
+        &__price{
+            display: flex;
+            flex-flow: row wrap;
+            margin: 0 -8px;
+            >*{
+                margin-bottom: 16px;
+                padding: 0 8px;
+                width: 50%;
+            }
+            &__more{
+                width: 100%;
+            }
+        }
+    }
+    .fee{
+        &__wrapper{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &__detail{
+            flex-flow: row wrap;
+            justify-content: center;
+            .btn--link{
+                flex: 1;
+                margin: 0 auto;
+                max-width: 80%;
+                width: auto;
+            }
+        }
+    }
+    .coin{
+        &__wrapper{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &__lbl{
+            padding-left: 20px;
+        }
+        &__price{
+            font-family: $font-m1;
+            font-size: rem(30);
+            font-weight: bold;
+            color: $col-green1;
+            span{
+                display: inline-block;
+                vertical-align: middle;
+                font-family: $font-noto;
+                font-size: rem(16);
+                font-weight: 500;
+                letter-spacing: -5px;
+            }
+        }
+    }
+}
+.sec__proplems{
+    .sec__title{
+        margin-bottom: 20px;
+    }
+    .proplems{
+        &__list{
+            display: flex;
+            flex-flow: row wrap;
+            margin: 0 -5px;
+        }
+        &__item{
+            margin-bottom: 25px;
+            padding: 0 5px;
+            width: 50%;
+        }
+    }
+}
+.sec__benefits{
+    .benefits{
+        &__list{
+            margin: 0 -5px;
+        }
+        &__item{
+            padding: 0 5px;
+            width: 50%;
+        }
+    }
+}
+.sec__blogs{
+    .blogs{
+        &__wrapper{
+            margin: 0 -5px;
+            >*{
+                padding: 0 5px;
+                width: 50%;
+            }
+        }
+    }
+}

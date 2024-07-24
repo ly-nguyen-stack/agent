@@ -28,64 +28,68 @@
 
 	<body class="container">
 		<!-- header -->
-		<header class="header">
-			<div class="row">
-				<div class="header__inner">
-					<h1 class="header__logo"><a href="#"><img src="./images/icon/header_logo.png" alt="agent CLUB"></a></h1>
-					<nav class="header__nav">
-						<div class="header__nav__inner">
-							<ul class="header__nav__menu">
-								<li><a href="#">HOME</a></li>
-								<li>
-									<a href="#">会員メニュー</a>
-									<ul>
-										<li><a href="#">請求一覧</a></li>
-										<li><a href="#">請求詳細</a></li>
-										<li><a href="#">aコイン交換</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">入居中のお困りごと</a>
-									<ul>
-										<li><a href="#">RESQ PLUS</a></li>
-										<li><a href="#">お困りごとFAQ</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">各種手続き</a>
-									<ul>
-										<li><a href="#">各種手続き・申請</a></li>
-										<li><a href="#">口座受付サービス</a></li>
-										<li><a href="#">解約手続き</a></li>
-										<li><a href="#">各種手続き履歴</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">不動産のご相談</a>
-									<ul>
-										<li><a href="#">賃貸物件をお探しの方</a></li>
-										<li><a href="#">不動産売買のご相談</a></li>
-										<li><a href="#">資産運用のご相談</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="#">アカウント</a>
-									<ul>
-										<li><a href="#">アカウント変更</a></li>
-										<li><a href="#">ログアウト</a></li>
-									</ul>
-								</li>
-							</ul>
-							<div class="header__nav__lg">
-								<a href="#"><img src="./images/icon/header_logo.png" alt=""></a>
-							</div>
-						</div>
-					</nav>
-					<div class="header__burger">
-						<span class="burger__lines"></span>
-					</div>
+		<header id="header" class="header">
+			<div class="header__main">
+				<div class="row">
+					<h1 class="header__logo"><a href="#"><img src="./images/common/header_logo_gr.png" alt="agent CLUB"></a></h1>
 				</div>
 			</div>
+			<div class="header__menu">
+				<div class="header__burger" id="navIcon">
+					<span class="header__burger__lines"></span>
+				</div>
+			</div>
+			<nav id="navBar" class="header__navbar">
+				<div class="navbar__wrapper">
+					<div class="navbar__inner">
+						<ul class="navbar__menu">
+							<li><a href="#">HOME</a></li>
+							<li>
+								<a href="#">会員メニュー</a>
+								<ul class="navbar__submenu">
+									<li><a href="#">請求一覧</a></li>
+									<li><a href="#">請求詳細</a></li>
+									<li><a href="#">aコイン交換</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">入居中のお困りごと</a>
+								<ul class="navbar__submenu">
+									<li><a href="#">RESQ PLUS</a></li>
+									<li><a href="#">お困りごとFAQ</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">各種手続き</a>
+								<ul class="navbar__submenu">
+									<li><a href="#">各種手続き・申請</a></li>
+									<li><a href="#">口座受付サービス</a></li>
+									<li><a href="#">解約手続き</a></li>
+									<li><a href="#">各種手続き履歴</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">不動産のご相談</a>
+								<ul class="navbar__submenu">
+									<li><a href="#">賃貸物件をお探しの方</a></li>
+									<li><a href="#">不動産売買のご相談</a></li>
+									<li><a href="#">資産運用のご相談</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">アカウント</a>
+								<ul class="navbar__submenu">
+									<li><a href="#">アカウント変更</a></li>
+									<li><a href="#">ログアウト</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="navbar__lg">
+							<a href="#"><img src="./images/common/header_logo_gr.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</nav>
 		</header>
 		<!-- main -->
 		<main class="main">
@@ -138,67 +142,67 @@
                                     </div>
                                     <div class="form__control">
                                         <div class="form__control__label">
-                                            <label for="#">受取人</label>
+                                            <label for="information-receiver">受取人</label>
                                         </div>
                                         <div class="form__control__input">
-                                            <input type="text" placeholder="例）XXX XXX">
+                                            <input type="text" placeholder="例）XXX XXX" id="information-receiver">
                                         </div>
                                     </div>
                                     <div class="form__control">
                                         <div class="form__control__label">
-                                            <label for="#">電話番号</label>
+                                            <label for="information-phone">電話番号</label>
                                         </div>
                                         <div class="form__control__input">
-                                            <input type="text" placeholder="例）000-0000-0000">
+                                            <input type="text" placeholder="例）000-0000-0000" id="information-phone">
                                         </div>
                                     </div>
                                     <div class="form__control">
                                         <div class="form__control__label">
-                                            <label for="#">メールアドレス</label>
+                                            <label for="information-email">メールアドレス</label>
                                         </div>
                                         <div class="form__control__input">
-                                            <input type="text" placeholder="例）XXXXXXX@XXXX.XXX">
+                                            <input type="text" placeholder="例）XXXXXXX@XXXX.XXX" id="information-email">
                                         </div>
                                     </div>
                                     <div class="form__control">
                                         <div class="form__control__label">
-                                            <label for="#">申し込み物件名</label>
+                                            <label for="information-apps">申し込み物件名</label>
                                         </div>
                                         <div class="form__control__input">
-                                            <input type="text" placeholder="例）XXXXXXマンション">
+                                            <input type="text" placeholder="例）XXXXXXマンション" id="information-apps">
                                         </div>
                                     </div>
                                     <div class="form__control">
                                         <div class="form__control__label">
-                                            <label for="#">申し込み物件名</label>
+                                            <label for="information-apps2">申し込み物件名</label>
                                         </div>
                                         <div class="form__control__input">
-                                            <input type="text" placeholder="例）XXX号">
+                                            <input type="text" placeholder="例）XXX号" id="information-apps2">
                                         </div>
                                     </div>
                                     <div class="form__control">
                                         <div class="form__control__label">
-                                            <label for="#">申し込み手続き店舗</label>
+                                            <label for="information-apps3">申し込み手続き店舗</label>
                                         </div>
                                         <div class="form__control__input">
-                                            <input type="text" placeholder="例）XXXXXX店">
+                                            <input type="text" placeholder="例）XXXXXX店" id="information-apps3">
                                         </div>
                                     </div>
                                     <div class="form__control">
                                         <div class="form__control__label">
-                                            <label for="#">受付担当者名</label>
+                                            <label for="reception-name">受付担当者名</label>
                                         </div>
                                         <div class="form__control__input">
-                                            <input type="text" placeholder="例）XXX XXXX">
+                                            <input type="text" placeholder="例）XXX XXXX" id="reception-name">
                                         </div>
                                     </div>
                                     <div class="form__control">
                                         <div class="form__control__label">
-                                            <label for="#">交換aコイン</label>
+                                            <label for="exchange-coin">交換aコイン</label>
                                         </div>
                                         <div class="form__control__input">
                                             <div class="coin__controls">
-                                                <input type="text" placeholder="例）X,XXX" class="wd-sm">
+                                                <input type="text" placeholder="例）X,XXX" class="wd-sm" id="exchange-coin">
                                                 <span class="coin__controls__lbl">aコイン</span>
                                                 <p class="note">※100aコイン以上の数字を入力してください</p>
                                                 <button type="button" class="btn btn--other">全てのaコインを利用</button>
@@ -217,7 +221,17 @@
             </div>
 		</main>
 		<!-- footer -->
-		<footer></footer>
+		<footer class="footer">
+			<div class="nav__fixed">
+				<ul>
+					<li class="nav__item nav__item--home active"><a href="#">ホーム</a></li>
+					<li class="nav__item nav__item--setting"><a href="#">契約内容</a></li>
+					<li class="nav__item nav__item--doc"><a href="#">各種手続</a></li>
+					<li class="nav__item nav__item--faq"><a href="#">FAQ</a></li>
+					<li class="nav__item nav__item--food"><a href="#">繁盛店情報</a></li>
+				</ul>
+			</div>
+		</footer>
 		<!-- scripts -->
 		<script src="./js/libs.js"></script>
 		<script src="./js/base.js"></script>
